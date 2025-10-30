@@ -2321,8 +2321,8 @@ const mIwModeA =/**/[['Casillas', 1, 2, 3, 4],
 [2, 'mode 2: to receive vibrations of dots and dashes','modo 2: para recibir vibraciones de puntos y rayas','mode 2: pour recevoir des vibrations de points et de tirets','모드 2: 도트 및 대시 진동을 수신하려면'],
 [3, 'mode 3: for large print','modo 3: para letra grande','mode 3: pour les gros caractères','모드 3: 큰 활자용'],
 [4, 'mode 4: to see everything bigger','modo 4: para ver todo más grande','mode 4: pour tout voir en plus grand','모드 4: 전체를 더 크게 보려면'],
-[5, 'mode 5: to see the text in yellow','modo 5: para ver el texto en color amarillo','mode 5: pour voir le texte en jaune','모드 5: 텍스트를 노란색으로 보려면'],
-[6, 'mode 6: To see the interpreter and disable the audio','modo 6: para ver el intérprete y deshabilitar el audio','mode 6: Pour voir l\'interprète et désactiver l\'audio','모드 6: 통역사를 보고 오디오를 비활성화하려면'],
+[5, 'mode 5: To see the interpreter and disable the audio','modo 5: para ver el intérprete y deshabilitar el audio','mode 5: Pour voir l\'interprète et désactiver l\'audio','모드 5: 통역사를 보고 오디오를 비활성화하려면'],
+[6, 'mode 6: to see the text in yellow','modo 6: para ver el texto en color amarillo','mode 6: pour voir le texte en jaune','모드 6: 텍스트를 노란색으로 보려면'],
 [7, 'mode 7: to display braille','modo 7: para mostrar el braille','mode 7: pour afficher le braille','모드 7: 점자 표시'],
 [8, 'count, change','cuenta, cambiar','compte, changer','경쟁, 변화']
 ];
@@ -5512,10 +5512,10 @@ const wColor = [['0-color FUERTE', '1-color velo', '2-id:key strings app', '3-En
 ];
 
 const wModeA = [['Casillas', 1, 2, 3, 4, 5, 6, 7, 8],
-[1, 'mode 1: to see everything smaller', 'mode 2: to receive vibrations of dots and dashes', 'mode 3: for large print', 'mode 4: to see everything bigger', 'mode 5: to see the text in yellow', 'mode 6: To see the interpreter and disable the audio', 'mode 7: to display braille', 'count, change'],
-[2, 'modo 1: para ver todo más pequeño', 'modo 2: para recibir vibraciones de puntos y rayas', 'modo 3: para letra grande', 'modo 4: para ver todo más grande', 'modo 5: para ver el texto en color amarillo', 'modo 6: para ver el intérprete y deshabilitar el audio', 'modo 7: para mostrar el braille', 'cuenta, cambiar'],
-[3, 'mode 1: pour tout voir plus petit', 'mode 2: pour recevoir des vibrations de points et de tirets', 'mode 3: pour les gros caractères', 'mode 4: pour tout voir en plus grand', 'mode 5: pour voir le texte en jaune', 'mode 6: Pour voir l\'interprète et désactiver l\'audio', 'mode 7: pour afficher le braille', 'compte, changer'],
-[4, '모드 1: 모든 것을 더 작게 보려면', '모드 2: 도트 및 대시 진동을 수신하려면', '모드 3: 큰 활자용', '모드 4: 전체를 더 크게 보려면', '모드 5: 텍스트를 노란색으로 보려면', '모드 6: 통역사를 보고 오디오를 비활성화하려면', '모드 7: 점자 표시', '경쟁, 변화']
+[1, 'mode 1: to see everything smaller', 'mode 2: to receive vibrations of dots and dashes', 'mode 3: for large print', 'mode 4: to see everything bigger', 'mode 5: to see the interpreter and disable the audio ', 'mode 6: to see the text in yellow', 'mode 7: to display braille', 'count, change'],
+[2, 'modo 1: para ver todo más pequeño', 'modo 2: para recibir vibraciones de puntos y rayas', 'modo 3: para letra grande', 'modo 4: para ver todo más grande', 'modo 5: para ver el intérprete y deshabilitar el audio', 'modo 6: para ver el texto en color amarillo', 'modo 7: para mostrar el braille', 'cuenta, cambiar'],
+[3, 'mode 1: pour tout voir plus petit', 'mode 2: pour recevoir des vibrations de points et de tirets', 'mode 3: pour les gros caractères', 'mode 4: pour tout voir en plus grand', "mode 5: Pour voir l\'interprète et désactiver l\'audio", 'mode 6: pour voir le texte en jaune', 'mode 7: pour afficher le braille', 'compte, changer'],
+[4, '모드 1: 모든 것을 더 작게 보려면', '모드 2: 도트 및 대시 진동을 수신하려면', '모드 3: 큰 활자용', '모드 4: 전체를 더 크게 보려면', '모드 5: 텍스트를 노란색으로 보려면', '모드 6: 점자 표시', '모드 7:  통역사를 보고 오디오를 비활성화하려면', '경쟁, 변화']
 ];
 /*
 const 	wModeZ		=[		['Casillas'	,1													,2																		,3														,4				,5																,6		   															,7													,8																		,9													,10						],

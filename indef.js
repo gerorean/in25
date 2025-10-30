@@ -4318,10 +4318,7 @@ function f0088()//ESPERAR un segundo y verificar que no exista un nuevo evento F
 						gRuTa = gRuta;
 						aMBi = ambi;
 						if(vFo)//Actualizar foco sigue activo
-						{	
-	
-					 // ... ... ... Aquí Voy!! ... ... ...
-					 		f0030();//Si existe onFocus externo por ej: TABULADOR -> C ACTUALIZAR variables locales e internacionales del FOCO vFocoL, vFocoLe(multimedia), vFocoI, vFocoIe(multimedia) y vFocoT dependiendo de RUTA y posición actual del FOCO, trabaja de la mano de f0012() y f0016()
+						{	f0030();//Si existe onFocus externo por ej: TABULADOR -> C ACTUALIZAR variables locales e internacionales del FOCO vFocoL, vFocoLe(multimedia), vFocoI, vFocoIe(multimedia) y vFocoT dependiendo de RUTA y posición actual del FOCO, trabaja de la mano de f0012() y f0016()
 						}
 						if(bNoSo)//Si la bandera de no sonido se activo..
 						{	bNoSo = 0;//Desactivar la bandera de No Sonido
@@ -10229,63 +10226,38 @@ function hh4()//CAMBIAR a líneas de Señas
 
 function hh5(get,rev)//CAMBIAR o TRAER el modo actual
 		{	hOU(5);
-
-//function hh21(get,rev)//CAMBIAR o TRAER el color actual
-//		{	hOU(21);
 			var i = g00VARS[45][2];
 			if(get == undefined||get == 0)//Si no hay que traer es porque va a cambiar de modo
-			{	
-				
-							
-				if(rev)
-				{	//for (var i = 1; i < 11; i++)
-					////for (var i = 1; i < wColor.length; i++)
-					//{	if(wModeA[0][i]==g00VARS[45][2])//Si el id del color es igual al de la memoria, Bingo!
-					//	{	
-							if(i > 1)//Si no es la PRIMER posicion..
-							{	g00VARS[45][2] = i-1;//tome el id de la siguiente fila
-							}
-							else//i = 1
-							{	g00VARS[45][2] = 7;//tome el id de la primer fila
-							}
-
-					//		i = 11;//termina el for
-					//	}
-					//}
+			{	if(rev)
+				{	if(i > 1)//Si no es la PRIMER posicion..
+					{	g00VARS[45][2] = i-1;//tome el id de la siguiente fila
+					}
+					else//i = 1
+					{	g00VARS[45][2] = 5;//tome el id de la primer fila
+					}
 				}
 				else
-				{	//for (var i = 1; i < 11; i++)
-					////for (var i = 1; i < wColor.length; i++)
-					//{	if(wModeA[0][i]==g00VARS[45][2])//Si el id del color es igual al de la memoria, Bingo!
-					//	{	
-
-							if(i < 7)//Si no es la ultima posicion..
-							{	g00VARS[45][2] = i+1;//tome el id de la siguiente fila
-							}
-							else//i = 9
-							{	g00VARS[45][2] = 1;//tome el id de la primer fila
-							}
-
-				//			i = 11;//termina el for
-				//		}
-				//	}
+				{	if(i < 5)//Si no es la ultima posicion..
+					{	g00VARS[45][2] = i+1;//tome el id de la siguiente fila
+					}
+					else//i = 9
+					{	g00VARS[45][2] = 1;//tome el id de la primer fila
+					}
 				}
 			}
 			else
 			{	g00VARS[45][2] = get;
 			}
 			i = g00VARS[45][2];
-			//console.error(' i=',i);
+			console.error(' i=',i);
 			switch (i)
 			{	case 1:hh50();break;
 				case 2:hh51();break;
-				//case 3:hh54();break;
 				case 3:hh53();break;
 				case 4:hh56();break;
-				case 5:hh57();break;
-				case 6:hh58();break;
-				case 7:hh59();break;
-				//case 9:hh60();break;
+				case 5:hh58();break;//hh57();break;
+				//case 6:hh58();break;
+				//case 7:hh59();break;
 			}
 			for (var j = 1; j <= 4; j++)
 			{	mIr004A[1][j]=mIwModeA[i][j]+mIkTapaI[5][j];
@@ -11097,15 +11069,10 @@ function hh56()//AJUSTAR estilo texto máximo
 			f0118();//HABILITAR la luz
 		}
 
+/*
 function hh57()//AJUSTAR estilo fondo negro
 		{	hOU(57);//mIS(57);
 			//g00VARS[45][2] = 6;
-
-
-
-
-
-
 			//f0126();//ACTUALIZAR la ruta
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -11121,12 +11088,10 @@ function hh57()//AJUSTAR estilo fondo negro
 			hh83();//HABILITAR texto amarillo boton negro simil hh27()
 			hh21(5);//APLICAR color turquesa
 			hh30();//HABILITAR tamaño 4 mediano
-
-
-			//__
 			//f0092();//HABILITAR bordes superior e inferior
 			f0118();//HABILITAR la luz
 		}
+*/
 
 function hh58()//AJUSTAR estilo señas
 		{	hOU(58);//mIS(58);
@@ -11161,15 +11126,10 @@ function hh58()//AJUSTAR estilo señas
 			f0118();//HABILITAR la luz
 		}
 
+/*
 function hh59()//AJUSTAR estilo braille
 		{	hOU(59);//mIS(59);
 			//g00VARS[45][2] = 8;
-
-
-
-
-
-
 			//f0126();//ACTUALIZAR la ruta
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -11185,14 +11145,12 @@ function hh59()//AJUSTAR estilo braille
 		 	hh84();//HABILITAR texto negro / blanco
 			hh19();//HABILITAR tamaño 2
 			//hh20();//texto pequeño
-
-
 			//___
 			//f0092();//HABILITAR bordes superior e inferior
 			hh21(6);//APLICAR color azul
 			f0118();//HABILITAR la luz
-
 		}
+*/
 
 function hh60()//AJUSTAR estilo público
 		{	hOU(60);//mIS(60);
@@ -11791,9 +11749,9 @@ function hh87()//RESET de ACCESO
 				//case 3: hh54();break;
 				case 3: hh53();break;
 				case 4: hh56();break;
-				case 5: hh57();break;
-				case 6: hh58();break;
-				case 7: hh59();break;
+				case 5: hh58();break;// hh57();break;
+				//case 6: hh58();break;
+				//case 7: hh59();break;
 				//case 9: hh60();break;
 			}
 			gRuta = 1;
