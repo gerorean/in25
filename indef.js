@@ -369,6 +369,8 @@ function f0003()//PRODUCIR pulsaciones
 			}
 		}
 
+
+/*		
 function f0007()	//CONVERTIR texto NORMALIZADO a braille - IN g00HTML[3][2] OUT g00HTML[19][2] pro7
 		{	lOL(7);
 			var v4;
@@ -475,9 +477,11 @@ function f0007()	//CONVERTIR texto NORMALIZADO a braille - IN g00HTML[3][2] OUT 
 				{	g00VARS[49][2] += s00brailG[0][1];//' ';
 				}
 			}
-			g00HTML[19][2] = g00VARS[49][2];
+			/////////g00HTML[19][2] = g00VARS[49][2];
 		}
+*/
 
+/*
 function f0008(let)//PASAR caracteres especiales o letras SUELTAS a id braille //o0063
 		{	lOL(8);
 			var v3 = 0;
@@ -591,6 +595,7 @@ function f0008(let)//PASAR caracteres especiales o letras SUELTAS a id braille /
 				}
 			}
 		}
+*/
 
 function f0009()//CONVERTIR puntos y rayas Morse a tiempo Morse (milisegundos) y ACTUALIZAR cada constante de tiempo Morse según la constante de velocidad morse actual
 		{	lOG(9);
@@ -1753,8 +1758,8 @@ function f0016()//CARGAR los guiones de la tapa
 		//	f0086();//* *ENCONTRAR todos los elementos cLife y cPros (ruta) o de cPros0 y cLife0 (tapa)
 			
 
-			f0007();//OUT g00HTML[19][2] braille
-			bTapaC1.innerHTML = g00HTML[19][2];//braille local
+			///////////////f0007();//OUT g00HTML[19][2] braille
+			//////////////////bTapaC1.innerHTML = g00HTML[19][2];//braille local
 			
 
 			if((id > 1)&&(g00VARS[5][2]))//Si no es el idioma ingles y esta i1..
@@ -1778,12 +1783,12 @@ function f0016()//CARGAR los guiones de la tapa
 				
 
 
-				f0007();//OUT g00HTML[19][2] braille
-				bTapaC2.innerHTML = g00HTML[19][2];//braille inter
+				//////////////f0007();//OUT g00HTML[19][2] braille
+				///////bTapaC2.innerHTML = g00HTML[19][2];//braille inter
 			}
 			else
 			{	bTapaD2.innerHTML =	'';
-				bTapaC2.innerHTML = '';
+				/////bTapaC2.innerHTML = '';
 			}
 			f0086();//* *ENCONTRAR todos los elementos cLife y cPros (ruta) o de cPros0 y cLife0 (tapa)
 		}
@@ -1829,7 +1834,7 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 						g00VARS[65][2] = window.outerHeight;//.innerHeight;//ventana actual con navegador , outerHeight;navegador completo
 						
 						if(g00VARS[65][2] < 1500)//Si alto menor de 2000px (pantalla pequeña o normal) OCULTAR la fila de botones inferior (Filbo)
-						{ 	iNt.style.height = 'calc(35% - calc(min(var(--cBrai),5vh)))';//'calc(35% - var(--kdot) - 0.5vh)';//intM.style.height = 'calc(35vh - var(--kdot) - 0.5vh)'; -- --- 0.5vh - max(var(--z),5vh) - var(--kdot))
+						{ 	iNt.style.height = 'calc(35% - 5vh)';//'calc(35% - var(--kdot) - 0.5vh)';//intM.style.height = 'calc(35vh - var(--kdot) - 0.5vh)'; -- --- 0.5vh - max(var(--z),5vh) - var(--kdot))
 							iFilbo.classList.add('cX');
 							iCelu.classList.remove('cCel1');
 							iCelu.classList.add('cCel0');
@@ -1842,7 +1847,7 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 							iV6b.style.backgroundColor = 'blue';
 						}
 						else//Si es igual o mayor de 2000px (pantalla muy alta) MOSTRAR la fila de botones inferior (Filbo)
-						{	iNt.style.height = 'calc(35% - calc(min(var(--cBrai),5vh)) - 5vh)';//calc(35% - max(var(--z),5vh))';//calc(35vh - max(var(--z),5vh))
+						{	iNt.style.height = 'calc(35% - 5vh - 5vh)';//calc(35% - max(var(--z),5vh))';//calc(35vh - max(var(--z),5vh))
 							iFilbo.classList.remove('cX');
 							iCelu.classList.remove('cCel0');
 							iCelu.classList.add('cCel1');
@@ -2117,7 +2122,7 @@ function f0024(reg)//i - Clic en botón 9 Tapa Info | REINICIAR animación, OCUL
 				ambi = 2;//Capa de TAPA INFORMATIVA X
 				f0089();//ENFOCAR y DECIR la Tapa o la Alerta	
 				//Prueba de f0143..
-				f0143(1);//ENCONTRAR todos los elementos cBrai
+				//f0143(1);//ENCONTRAR todos los elementos cBrai
 			}
 		}
 
@@ -2712,7 +2717,7 @@ f0031(scr)//Pintar el marco (scr)POSICIONAR al usuario sobre el foco(cursor) sob
 			}
 
 			//Prueba de f0143..
-			f0143();//ENCONTRAR todos los elementos cBrai
+			//f0143();//ENCONTRAR todos los elementos cBrai
 		}
 
 
@@ -3353,8 +3358,8 @@ function f0046()//L CARGAR las variables s00EXIT con los STRINGS HTML INTERNACIO
 				f0080();//IN OUT g00HTML[14] g00HTML[32] HTML señas del LOGO (tapa)
 				s00EXIT[4][2] = g00HTML[14][2];//señas animadas Internacional
 				s00EXIT[6][2] = g00HTML[32][2];//señas libro Internacional
-				f0007();//OUT g00HTML[19][2] braille Internacional
-				s00EXIT[8][2] = g00HTML[19][2];//braille Internacional
+				/////////////////f0007();//OUT g00HTML[19][2] braille Internacional
+				/////////////////7s00EXIT[8][2] = g00HTML[19][2];//braille Internacional
 			}
 			//ACTUALIZAR las variables LOCALES s00EXIT[1-3-5-7-9]
 			g00VARS[28][2] = 0;//ACTIVA modo local
@@ -3365,8 +3370,8 @@ function f0046()//L CARGAR las variables s00EXIT con los STRINGS HTML INTERNACIO
 			f0080();//g00HTML[14] g00HTML[32] HTML señas del LOGO (tapa)
 			s00EXIT[3][2] = g00HTML[14][2];//señas animadas Local
 			s00EXIT[5][2] = g00HTML[32][2];//señas libro Local
-			f0007();//CONVERTIR texto NORMALIZADO a braille - IN g00HTML[3][2] OUT g00HTML[19][2] braille Local
-			s00EXIT[7][2] = g00HTML[19][2];//braille Local
+			////////////////7f0007();//CONVERTIR texto NORMALIZADO a braille - IN g00HTML[3][2] OUT g00HTML[19][2] braille Local
+			///////////s00EXIT[7][2] = g00HTML[19][2];//braille Local
 		}
 
 function f0047(reg)//"UNDO CANCEL X" - click en botón 1 | REGRESAR a una ruta secundaria o principal anterior
@@ -3497,12 +3502,12 @@ function f0050()//OCULTAR ambientes, DEJAR pantalla vacia, DETENER vibraciones y
 			{	bTapaO.innerHTML = '';//ELIMINAR HTML de tapaX y alertaY
 				iTR.innerHTML = '';
 				bTapaA1.innerHTML = '';
-				bTapaC1.innerHTML = '';
+				///////////////bTapaC1.innerHTML = '';
 				bTapaD1.innerHTML = '';
 				if((g00VARS[27][2] > 1)&&(g00VARS[5][2]))//Si no es el idioma ingles y esta i1..
 				{	iTL.innerHTML = '';
 					bTapaD2.innerHTML =	'';
-					bTapaC2.innerHTML = '';
+					//bTapaC2.innerHTML = '';
 					bTapaA2.innerHTML = '';
 				}
 				iTAPA.classList.add('cX');//OCULTAR TAPA
@@ -3737,13 +3742,13 @@ function f0061(v2,id)//ADICIONAR a v2 (html acumulado) el código HTML de la RUT
 				{	v2 += '<hr class="cHR"><div class="cCero cTela">'+s00EXIT[6][2]+'</div>';
 				}
 			}
-			if((g00VARS[11][2] == 0)||(g00VARS[11][2] == 3))//todos los modos o BRAILLE
-			{	v2 += '<hr><div class="cPadd4A"><div class="cBrai">'+s00EXIT[7][2]+'</div>';
-				if((id > 1)&&(g00VARS[5][2]))//si i1
-				{	v2 += '<hr class="cHR"><div class="cBra1">'+s00EXIT[8][2]+'</div>';
-				}
-				v2 += '</div>';
-			}
+			///////if((g00VARS[11][2] == 0)||(g00VARS[11][2] == 3))//todos los modos o BRAILLE
+			///////{	v2 += '<hr><div class="cPadd4A"><div class="cBrai">'+s00EXIT[7][2]+'</div>';
+			///////	if((id > 1)&&(g00VARS[5][2]))//si i1
+			///////	{	v2 += '<hr class="cHR"><div class="cBra1">'+s00EXIT[8][2]+'</div>';
+			///////	}
+			///////	v2 += '</div>';
+			///////}
 			if((g00VARS[11][2] == 0)||(g00VARS[11][2] == 2))//todos los modos o MORSE
 			{	v2 += '<hr><div class="cPadd4A cCent"><div class="cMors">'+s00EXIT[9][2]+'</div>';
 				if((id > 1)&&(g00VARS[5][2]))//i1
@@ -6756,9 +6761,9 @@ function f0108() // hh18 DESHABILITAR bordes superior e inferior
 
 function f0109()//hh89 QUITAR la presentación
 		{	lOG(109);
-			if(g00VARS[11][2] == 3)
-			{ 	iBrail.classList.remove('cX');
-			}
+			////////if(g00VARS[11][2] == 3)
+			////////{ 	iBrail.classList.remove('cX');
+			////////}
 			ini1 = false;//Desactiva la marquesina local
 			ini2 = false;//Desactiva la marquesina en ingles
 			iV2a.style.backgroundColor = 'grey';
@@ -8245,27 +8250,27 @@ function f0142()//CONSULTAR a la base de datos por cierta collección Valida
 		}
 /***/
 
-
+/*
 function f0143(info)//ENCONTRAR todos los elementos cBrai
 		{	lOL(143);
 			if(info)
 			{	colBrai = document.getElementsByClassName("cBraIl");
 				colBra1 = document.getElementsByClassName("cBraI1");
-				iBrAi.innerHTML = colBrai[0].textContent;
-				iBrail.classList.remove('cX');
+				///////////iBrAi.innerHTML = colBrai[0].textContent;
+				///////iBrail.classList.remove('cX');
 			}
 			else
 			{	colBrai = document.getElementsByClassName("cBrai");
 				colBra1 = document.getElementsByClassName("cBra1");
-				if(colBrai[gFoco])
-				{	iBrAi.innerHTML = colBrai[gFoco].textContent;
-				}
-				if(g00VARS[11][2] != 3)
-				{	iBrail.classList.add('cX');
-				}
+				//////if(colBrai[gFoco])
+				//////{	iBrAi.innerHTML = colBrai[gFoco].textContent;
+				//////}
+				/////////if(g00VARS[11][2] != 3)
+				/////////{	iBrail.classList.add('cX');
+				/////////}
 			}
 		}
-
+*/
 
 function f0144()//ESPERAR un momento y dar la orden de cambiar de anuncio
 		{	lOL(144);
@@ -10190,7 +10195,7 @@ console.log(`Estado inicial de CapsLock: ${navigator.keyboard ? 'No soportado en
 function hh1()//CAMBIAR a lineas de texto
 		{	hOG(1);//mIS(1);
 			g00VARS[11][2] = 1;
-			iBrail.classList.add('cX');
+			/////////iBrail.classList.add('cX');
 			//console.error('|> Flag');
 			//f0048();//RETORNAR a la ruta principal
 			f0017();
@@ -10199,7 +10204,7 @@ function hh1()//CAMBIAR a lineas de texto
 function hh2()//CAMBIAR a líneas Morse
 		{	hOU(2);//mIS(2);
 			g00VARS[11][2] = 2;
-			iBrail.classList.add('cX');
+			//////////iBrail.classList.add('cX');
 			console.error('|> Flag');
 			//f0048();//RETORNAR a la ruta principal
 			f0017();
@@ -10208,7 +10213,7 @@ function hh2()//CAMBIAR a líneas Morse
 function hh3()//CAMBIAR a líneas Braille
 		{	hOU(3);//mIS(3);
 			g00VARS[11][2] = 3;
-			iBrail.classList.remove('cX');
+			///////////iBrail.classList.remove('cX');
 			console.error('|> Flag');
 			//f0048();//RETORNAR a la ruta principal
 			f0017();
@@ -10217,7 +10222,7 @@ function hh3()//CAMBIAR a líneas Braille
 function hh4()//CAMBIAR a líneas de Señas
 		{	hOU(4);//mIS(4);
 			g00VARS[11][2] = 4;
-			iBrail.classList.add('cX');
+			////////////iBrail.classList.add('cX');
 			//f0048();//RETORNAR a la ruta principal
 			f0017();
 		}
@@ -11222,9 +11227,9 @@ function hh60()//AJUSTAR estilo público
 
 function hh61()//CARGAR la presentación AV de anuncios de la ruta 3 //b0061()	//
 		{	hOG(61);//mIS(61);
-			if(g00VARS[11][2] == 3)//Si el modo braille esta activo
-			{ 	iBrail.classList.add('cX');//Oculta el braille fijo
-			}
+			////////////////////if(g00VARS[11][2] == 3)//Si el modo braille esta activo
+			////////////////////{ 	iBrail.classList.add('cX');//Oculta el braille fijo
+			////////////////////}
 			var ss = '<img src="signs/0.png" alt="seña" class="z70"><div class="cGlosD cFlex"><div class="zProsa"></div></div>';
 			gRuta = 3;
 			gFoco = 1;
@@ -11244,12 +11249,12 @@ function hh61()//CARGAR la presentación AV de anuncios de la ruta 3 //b0061()	/
 				if((g00VARS[27][2] > 1)&&(g00VARS[5][2]))//Si no es el idioma ingles y esta i1..
 				{	iTL.innerHTML = '';
 					bTapaD2.innerHTML =	'';
-					bTapaC2.innerHTML = '';
+					////bTapaC2.innerHTML = '';
 					bTapaA2.innerHTML = '';
 				}
 				iTR.innerHTML = '';
 				bTapaA1.innerHTML = '';
-				bTapaC1.innerHTML = '';
+				/////////////bTapaC1.innerHTML = '';
 				bTapaD1.innerHTML = '';
 			}
 			//contPre[1] = 1;//Reinicia al anuncio 0 de Portada

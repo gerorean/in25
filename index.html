@@ -19,19 +19,16 @@
 <body>
 
 	<!--CAPA MADRE: LIENZO DE TRABAJO: Controla el Fullscreen, los leds y el valor de las variables globales-->
-	<div id='iBody' class='c1x1 cTop c0' onclick="f0074()"><!--VENTANA general de la aplicación va fija sin desbordes de contenido, sin publicidad de 000webhostapp, controla las variables locales del css-->
-
+	<div id='iBody' class='c1x1 cTop c0 c-R' onclick="f0074()"><!--VENTANA general de la aplicación va fija sin desbordes de contenido, sin publicidad de 000webhostapp, controla las variables locales del css-->
 
 		<!--0. Fondo del intercomunicador-->
-		<div id='iInCom'>
+		<div id='iInCom' class='c X'>
 			<div id='iCeLu' class='cBeiBg cTop cCel0'>
 			</div>
 		</div>
 
-
-
 		<!--1. LEDS Contiene los mini-indicadores inferiores de colores con fondo negro en el bottom-->
-		<div class='cBack cBott cFleB'>
+		<div class='cBack cBott cFleB c X'>
 			<div class='cBloK cFleB'>
 				<div id='iV1f' class='cGre'>
 				</div>
@@ -118,10 +115,8 @@
 			</div>
 		</div>
 
-
-
 		<!--2. APLICACION i Information-->
-		<div id='iApp' class=''><!--Marco de apoyo con separaciones fijas arriba y abajo para posicionar el contenido central en la pantalla-->
+		<div id='iApp' class='c-X'><!--Marco de apoyo con separaciones fijas arriba y abajo para posicionar el contenido central en la pantalla-->
 			<!--CONTENIDO CENTRAL, ventana con altura dinamica dentro del marco de apoyo, su la altura es variable dependiendo de la altura de la pantalla-->
 			<div id='iCelu' class='cTop cCel0 cR' tabindex='-2'>
 				<div class='cBox cTop cB'><!--MARQUESINA oculta para conseguir el alto de 1a fila de la marquesina-->
@@ -842,15 +837,6 @@
 							</div>
 							<div aria-hidden="true">
 								<hr>
-								<hr>
-								<div class="cPadd4A cCent">
-									<div id='bTapaC1' class='cBraIl'>⠞⠑⠭⠞⠕ ⠛⠗⠁⠝⠙⠑⠂ ⠁⠉⠉⠑⠙⠑⠗
-									</div>
-									<hr class='cHR'>
-									<div id='bTapaC2' class='cBraI1'>⠞⠑⠭⠞⠕ ⠛⠗⠁⠝⠙⠑⠂ ⠁⠉⠉⠑⠙⠑⠗
-									</div>
-								</div>
-								<hr>
 								<div class='cPadd4A cCent'>
 									<div id='bTapaD1' class='cMors'>-'·'-··-'-'---| --·'·-·'·-'-·'-··'·'--··--| ·-'-·-·'-·-·'·'-··'·'·-·
 									</div>
@@ -958,42 +944,11 @@
 				<div class='cBott cSom'>
 				</div>
 			</div>
-
-
-
-
-
-
-
-			
-
-
-
-
-
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<!--3. INTERFAZ CON BOTONES GRANDES Y FIJOS-->
-		<div id='iFonde' class='cBox cTop'><!--FONDE para mostrar la capa con la interfaz con botones grandes y fijos del usuario-->
+		<div id='iFonde' class='cBox cTop c-X'><!--FONDE para mostrar la capa con la interfaz con botones grandes y fijos del usuario-->
 			
-			
-
 			<!--GLOBOS DE ENTRADA Y SALIDA DEL INTERCOMUNICADOR-->
 			<div id='iGlob' class='cX'>
 				<!--Recuadro oculto superior para todos los textos de entrada que sean para el intercomunicador por ejemplo provenientes de la linea 123 hacia el usuario-->
@@ -1007,13 +962,7 @@
 				<div id='iIntM0' class='cUp cTexM cSiza'>
 				</div>
 			</div>
-
-
-			
-			
-			
-			
-			
+	
 			<div id='iMarco'><!--MARCO para activar las 4 barreras invisibles de bloqueo-->
 				<div id='iPos1' class='cVert' onclick='f0074()'><!--bloqueo vertical izquierdo-->
 				</div>
@@ -1037,10 +986,6 @@
 			<!--div id='iDice' class='cX cTalk cBott'>
 				<i class='fas fa-comment-dots cInvert cTalk'></i>
 			</div-->
-
-			
-
-
 
 			<!--div id='mBoTS' class='cBotSOS cX'>
 				<div id='mBotS' class='fas fa-square cTran c45Rot'></div>
@@ -1166,190 +1111,159 @@
 				<div id='iHora' class='cBott cFlex'>05:30
 				</div>
 			</div-->
+			
+		</div>
+					
+		<!--4. Recuadro con la Interfaz de Salida-->
+		<div id='iNt' class='cX'>
+			<!--Scroll y para iTaco-->
+			<div id='intM' class='cHue cX' >
+				<!--img src='files/imorse.png' class=''-->
+				<div id='iTaco' class='c X'>
+					<h1>Morse Code, letters or functions on <i class='fas fa-times'></i><i class='fas fa-circle'></i><i class='fas fa-square'></i> buttons</h1>
+					<!--h1>Letters, Functions and Morse Code</h1-->
+					<table>
+						<thead>
+							<tr>
+								<th>Morse Code</th>
+								<th><i class='fa fa-minus'></i> Letter, <i class='fas fa-times'></i>Function 1, <i class='fas fa-circle'></i>Function 2, <i class='fas fa-square'></i>Function 3</th>
+								<!--th>Phonetic</th-->
+							</tr>
+						</thead>
+						<tbody>
+						<tr><td>――(Very long dash t&gt;5s)</td><td><i class='fa fa-minus'></i> SOS Alert! (in Morse Code), <i class='fas fa-square'></i> SOS Alert! (in Morse Code)</td></tr>
+						<tr><td>―(Long dash t&lt;5s)</td><td><i class='fa fa-minus'></i> [Space] (in Morse Code)</td></tr>
+						<tr><td>.-</td><td><i class='fa fa-minus'></i> A (Alpha)</td></tr>
+						<tr><td>-...</td><td><i class='fa fa-minus'></i> B (Bravo), <i class='fas fa-times'></i> [Giant qwerty keyboard input mode]</td></tr>
+						<tr><td>-.-.</td><td><i class='fa fa-minus'></i> C (Charlie)</td></tr>
+						<tr><td>-..</td><td><i class='fa fa-minus'></i> D (Delta), <i class='fas fa-times'></i> [Large qwerty keyboard input mode]</td></tr>
+						<tr><td>.(Dot)</td><td><i class='fa fa-minus'></i> E (Echo), <i class='fas fa-times'></i> Intercom disabled</td></tr>
+						<tr><td>..-.</td><td><i class='fa fa-minus'></i> F (Foxtrot)</td></tr>
+						<tr><td>--.</td><td><i class='fa fa-minus'></i> G (Golf)</td></tr>
+						<tr><td>....</td><td><i class='fa fa-minus'></i> H (Hotel)</td></tr>
+						<tr><td>..</td><td><i class='fa fa-minus'></i> I (India), <i class='fas fa-times'></i> Delete the last entry</td></tr>
+						<tr><td>.---</td><td><i class='fa fa-minus'></i> J (Juliet)</td></tr>
+						<tr><td>-.-</td><td><i class='fa fa-minus'></i> K (Kilo)</td></tr>
+						<tr><td>.-..</td><td><i class='fa fa-minus'></i> L (Lima)</td></tr>
+						<tr><td>--</td><td><i class='fa fa-minus'></i> M (Mike), <i class='fas fa-times'></i> Delete the last entry</td></tr>
+						<tr><td>-.</td><td><i class='fa fa-minus'></i> N (November), <i class='fas fa-times'></i> [Qwerty keyboard input mode]</td></tr>
+						<tr><td>---</td><td><i class='fa fa-minus'></i> O (Oscar), <i class='fas fa-times'></i> Delete input text</td></tr>
+						<tr><td>.--.</td><td><i class='fa fa-minus'></i> P (Papa)</td></tr>
+						<tr><td>--.-</td><td><i class='fa fa-minus'></i> Q (Quebec)</td></tr>
+						<tr><td>.-.</td><td><i class='fa fa-minus'></i> R (Romeo)</td></tr>
+						<tr><td>...</td><td><i class='fa fa-minus'></i> S (Sierra), <i class='fas fa-times'></i> Delete input text</td></tr>
+						<tr><td>-(Dash)</td><td><i class='fa fa-minus'></i> T (Tango) <i class='fas fa-circle'></i> Reverse a click</td></tr>
+						<tr><td>..-</td><td><i class='fa fa-minus'></i> U (Uniform)</td></tr>
+						<tr><td>...-</td><td><i class='fa fa-minus'></i> V (Victor)</td></tr>
+						<tr><td>.--</td><td><i class='fa fa-minus'></i> W (Whiskey)</td></tr>
+						<tr><td>-..-</td><td><i class='fa fa-minus'></i> X (X-ray)</td></tr>
+						<tr><td>-.--</td><td><i class='fa fa-minus'></i> Y (Yankee)</td></tr>
+						<tr><td>--..</td><td><i class='fa fa-minus'></i> Z (Zulu)</td></tr>
+						<tr><td>..--</td><td><i class='fa fa-minus'></i> [Space]</td></tr>
+						<tr><td>.----</td><td><i class='fa fa-minus'></i> 1</td></tr>
+						<tr><td>..---</td><td><i class='fa fa-minus'></i> 2</td></tr>
+						<tr><td>...--</td><td><i class='fa fa-minus'></i> 3</td></tr>
+						<tr><td>....-</td><td><i class='fa fa-minus'></i> 4</td></tr>
+						<tr><td>.....</td><td><i class='fa fa-minus'></i> 5</td></tr>
+						<tr><td>-....</td><td><i class='fa fa-minus'></i> 6, <i class='fas fa-times'></i> [Sign keyboard input mode]</td></tr>
+						<tr><td>--...</td><td><i class='fa fa-minus'></i> 7</td></tr>
+						<tr><td>---..</td><td><i class='fa fa-minus'></i> 8</td></tr>
+						<tr><td>----.</td><td><i class='fa fa-minus'></i> 9</td></tr>
+						<tr><td>-----</td><td><i class='fa fa-minus'></i> 0</td></tr>
+						<tr><td>--.--</td><td><i class='fa fa-minus'></i> Ñ</td></tr>
+						<tr><td>.-.-.-</td><td><i class='fa fa-minus'></i> .</td></tr>
+						<tr><td>.--.-.</td><td><i class='fa fa-minus'></i> @</td></tr>
+						<tr><td>..--..</td><td><i class='fa fa-minus'></i> ?</td></tr>
+						<tr><td>-..-.</td><td><i class='fa fa-minus'></i> /</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id='iUnI' class='c G cX'><!--Recuadro completo del teclado universal-->
+				
+				<div id='iUn1' class=''><!--Recuadro del teclado universal qwerty señas y autista sin los botones laterales-->	
+					<div id='iKeyB' class='c G c X'>
+						<div class='cKRow c X'>
+							<div class='keY'>1</div>
+							<div class='keY'>2</div>
+							<div class='keY'>3</div>
+							<div class='keY'>4</div>
+							<div class='keY'>5</div>
+							<div class='keY'>6</div>
+							<div class='keY'>7</div>
+							<div class='keY'>8</div>
+							<div class='keY'>9</div>
+							<div class='keY'>0</div>
+						</div>
+						<div class='cKRow c X'>
+							<div class='keY'>q</div>
+							<div class='keY'>w</div>
+							<div class='keY'>e</div>
+							<div class='keY'>r</div>
+							<div class='keY'>t</div>
+							<div class='keY'>y</div>
+							<div class='keY'>u</div>
+							<div class='keY'>i</div>
+							<div class='keY'>o</div>
+							<div class='keY'>p</div>
+						</div>
+						<div class='cKRow c X'>
+							<div class='keY'>a</div>
+							<div class='keY'>s</div>
+							<div class='keY'>d</div>
+							<div class='keY'>f</div>
+							<div class='keY'>g</div>
+							<div class='keY'>h</div>
+							<div class='keY'>j</div>
+							<div class='keY'>k</div>
+							<div class='keY'>l</div>
+							<div class='keY'>ñ</div>
+						</div>
+						<div class='cKRow c X'>
+							<div class='keY special' id='shift'>Shift</div>
+							<div class='keY'>z</div>
+							<div class='keY'>x</div>
+							<div class='keY'>c</div>
+							<div class='keY'>v</div>
+							<div class='keY'>b</div>
+							<div class='keY'>n</div>
+							<div class='keY'>m</div>
+							<div class='keY'>,</div>
+							<div class='keY'>?</div>
+						</div>
+						<div class='cKRow c X'>
+							<div class='keY'>!</div>
+							<div class='keY'>/</div>
+							<div class='keY'>-</div>
+							<div class='keY' id='tilde'>´</div>
+							<div class='keY special doble' id='space'></div>
+							<div class='keY'>.</div>
+							<div class='keY'>:</div>
+							<div class='keY'>@</div>
+							<div class='keY special' id='del'>Del</div>
+						</div>
+					</div>
+					<div id='iKeyS' class='cHue cX cR'>
+						<img id='' src="files/signchat.png" alt='teclado en señas' class='cUSe'>
+					</div>
+					<div id='iKeyA' class='cHue cX cG'>
+						<img id='' src="files/tautista.png" alt='teclado autista' class='cUSe'>
+					</div>
+				</div>
+				<div id='iUn2' class=''><!--Recuadro de los botones laterales del teclado universal  fas fa-comments-->
+					<div class='keR fas fa-keyboard' onclick="f0169(1)"></div>
+					<div class='keR fas fa-sign-language' onclick="f0169(2)"></div>
+					<div class='keR fas fa-puzzle-piece' onclick="f0169(3)"></div>
+					<div class='keR fas fa-lock' onclick="f0169(4)"></div>
+				</div>
+			</div>
 		</div>
 
-
-
-
-
-
-
-
-		
-			
-			<!--Recuadro con la Interfaz de Salida-->
-			<div id='iNt' class='cX c B'>
-
-				<!--Scroll y para iTaco-->
-				<div id='intM' class='cHue cX' >
-					<!--img src='files/imorse.png' class=''-->
-					<div id='iTaco' class='c X'>
-						<h1>Morse Code, letters or functions on <i class='fas fa-times'></i><i class='fas fa-circle'></i><i class='fas fa-square'></i> buttons</h1>
-						<!--h1>Letters, Functions and Morse Code</h1-->
-						<table>
-							<thead>
-								<tr>
-									<th>Morse Code</th>
-									<th><i class='fa fa-minus'></i> Letter, <i class='fas fa-times'></i>Function 1, <i class='fas fa-circle'></i>Function 2, <i class='fas fa-square'></i>Function 3</th>
-									<!--th>Phonetic</th-->
-								</tr>
-							</thead>
-							<tbody>
-							<tr><td>――(Very long dash t&gt;5s)</td><td><i class='fa fa-minus'></i> SOS Alert! (in Morse Code), <i class='fas fa-square'></i> SOS Alert! (in Morse Code)</td></tr>
-							<tr><td>―(Long dash t&lt;5s)</td><td><i class='fa fa-minus'></i> [Space] (in Morse Code)</td></tr>
-							<tr><td>.-</td><td><i class='fa fa-minus'></i> A (Alpha)</td></tr>
-							<tr><td>-...</td><td><i class='fa fa-minus'></i> B (Bravo), <i class='fas fa-times'></i> [Giant qwerty keyboard input mode]</td></tr>
-							<tr><td>-.-.</td><td><i class='fa fa-minus'></i> C (Charlie)</td></tr>
-							<tr><td>-..</td><td><i class='fa fa-minus'></i> D (Delta), <i class='fas fa-times'></i> [Large qwerty keyboard input mode]</td></tr>
-							<tr><td>.(Dot)</td><td><i class='fa fa-minus'></i> E (Echo), <i class='fas fa-times'></i> Intercom disabled</td></tr>
-							<tr><td>..-.</td><td><i class='fa fa-minus'></i> F (Foxtrot)</td></tr>
-							<tr><td>--.</td><td><i class='fa fa-minus'></i> G (Golf)</td></tr>
-							<tr><td>....</td><td><i class='fa fa-minus'></i> H (Hotel)</td></tr>
-							<tr><td>..</td><td><i class='fa fa-minus'></i> I (India), <i class='fas fa-times'></i> Delete the last entry</td></tr>
-							<tr><td>.---</td><td><i class='fa fa-minus'></i> J (Juliet)</td></tr>
-							<tr><td>-.-</td><td><i class='fa fa-minus'></i> K (Kilo)</td></tr>
-							<tr><td>.-..</td><td><i class='fa fa-minus'></i> L (Lima)</td></tr>
-							<tr><td>--</td><td><i class='fa fa-minus'></i> M (Mike), <i class='fas fa-times'></i> Delete the last entry</td></tr>
-							<tr><td>-.</td><td><i class='fa fa-minus'></i> N (November), <i class='fas fa-times'></i> [Qwerty keyboard input mode]</td></tr>
-							<tr><td>---</td><td><i class='fa fa-minus'></i> O (Oscar), <i class='fas fa-times'></i> Delete input text</td></tr>
-							<tr><td>.--.</td><td><i class='fa fa-minus'></i> P (Papa)</td></tr>
-							<tr><td>--.-</td><td><i class='fa fa-minus'></i> Q (Quebec)</td></tr>
-							<tr><td>.-.</td><td><i class='fa fa-minus'></i> R (Romeo)</td></tr>
-							<tr><td>...</td><td><i class='fa fa-minus'></i> S (Sierra), <i class='fas fa-times'></i> Delete input text</td></tr>
-							<tr><td>-(Dash)</td><td><i class='fa fa-minus'></i> T (Tango) <i class='fas fa-circle'></i> Reverse a click</td></tr>
-							<tr><td>..-</td><td><i class='fa fa-minus'></i> U (Uniform)</td></tr>
-							<tr><td>...-</td><td><i class='fa fa-minus'></i> V (Victor)</td></tr>
-							<tr><td>.--</td><td><i class='fa fa-minus'></i> W (Whiskey)</td></tr>
-							<tr><td>-..-</td><td><i class='fa fa-minus'></i> X (X-ray)</td></tr>
-							<tr><td>-.--</td><td><i class='fa fa-minus'></i> Y (Yankee)</td></tr>
-							<tr><td>--..</td><td><i class='fa fa-minus'></i> Z (Zulu)</td></tr>
-							<tr><td>..--</td><td><i class='fa fa-minus'></i> [Space]</td></tr>
-							<tr><td>.----</td><td><i class='fa fa-minus'></i> 1</td></tr>
-							<tr><td>..---</td><td><i class='fa fa-minus'></i> 2</td></tr>
-							<tr><td>...--</td><td><i class='fa fa-minus'></i> 3</td></tr>
-							<tr><td>....-</td><td><i class='fa fa-minus'></i> 4</td></tr>
-							<tr><td>.....</td><td><i class='fa fa-minus'></i> 5</td></tr>
-							<tr><td>-....</td><td><i class='fa fa-minus'></i> 6, <i class='fas fa-times'></i> [Sign keyboard input mode]</td></tr>
-							<tr><td>--...</td><td><i class='fa fa-minus'></i> 7</td></tr>
-							<tr><td>---..</td><td><i class='fa fa-minus'></i> 8</td></tr>
-							<tr><td>----.</td><td><i class='fa fa-minus'></i> 9</td></tr>
-							<tr><td>-----</td><td><i class='fa fa-minus'></i> 0</td></tr>
-							<tr><td>--.--</td><td><i class='fa fa-minus'></i> Ñ</td></tr>
-							<tr><td>.-.-.-</td><td><i class='fa fa-minus'></i> .</td></tr>
-							<tr><td>.--.-.</td><td><i class='fa fa-minus'></i> @</td></tr>
-							<tr><td>..--..</td><td><i class='fa fa-minus'></i> ?</td></tr>
-							<tr><td>-..-.</td><td><i class='fa fa-minus'></i> /</td></tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-
-
-				<div id='iUnI' class='c G cX'><!--Recuadro completo del teclado universal-->
-					
-					<div id='iUn1' class=''><!--Recuadro del teclado universal qwerty señas y autista sin los botones laterales-->	
-						<div id='iKeyB' class='c G c X'>
-							<div class='cKRow c X'>
-								<div class='keY'>1</div>
-								<div class='keY'>2</div>
-								<div class='keY'>3</div>
-								<div class='keY'>4</div>
-								<div class='keY'>5</div>
-								<div class='keY'>6</div>
-								<div class='keY'>7</div>
-								<div class='keY'>8</div>
-								<div class='keY'>9</div>
-								<div class='keY'>0</div>
-							</div>
-							<div class='cKRow c X'>
-								<div class='keY'>q</div>
-								<div class='keY'>w</div>
-								<div class='keY'>e</div>
-								<div class='keY'>r</div>
-								<div class='keY'>t</div>
-								<div class='keY'>y</div>
-								<div class='keY'>u</div>
-								<div class='keY'>i</div>
-								<div class='keY'>o</div>
-								<div class='keY'>p</div>
-							</div>
-							<div class='cKRow c X'>
-								<div class='keY'>a</div>
-								<div class='keY'>s</div>
-								<div class='keY'>d</div>
-								<div class='keY'>f</div>
-								<div class='keY'>g</div>
-								<div class='keY'>h</div>
-								<div class='keY'>j</div>
-								<div class='keY'>k</div>
-								<div class='keY'>l</div>
-								<div class='keY'>ñ</div>
-							</div>
-							<div class='cKRow c X'>
-								<div class='keY special' id='shift'>Shift</div>
-								<div class='keY'>z</div>
-								<div class='keY'>x</div>
-								<div class='keY'>c</div>
-								<div class='keY'>v</div>
-								<div class='keY'>b</div>
-								<div class='keY'>n</div>
-								<div class='keY'>m</div>
-								<div class='keY'>,</div>
-								<div class='keY'>?</div>
-							</div>
-							<div class='cKRow c X'>
-								<div class='keY'>!</div>
-								<div class='keY'>/</div>
-								<div class='keY'>-</div>
-								<div class='keY' id='tilde'>´</div>
-								<div class='keY special doble' id='space'></div>
-								<div class='keY'>.</div>
-								<div class='keY'>:</div>
-								<div class='keY'>@</div>
-								<div class='keY special' id='del'>Del</div>
-							</div>
-						</div>
-
-
-						<div id='iKeyS' class='cHue cX cR'>
-							<img id='' src="files/signchat.png" alt='teclado en señas' class='cUSe'>
-						</div>
-
-
-						<div id='iKeyA' class='cHue cX cG'>
-							<img id='' src="files/tautista.png" alt='teclado autista' class='cUSe'>
-						</div>
-
-
-					</div>
-
-					<div id='iUn2' class=''><!--Recuadro de los botones laterales del teclado universal  fas fa-comments-->
-						<div class='keR fas fa-keyboard' onclick="f0169(1)"></div>
-						<div class='keR fas fa-sign-language' onclick="f0169(2)"></div>
-						<div class='keR fas fa-puzzle-piece' onclick="f0169(3)"></div>
-						<div class='keR fas fa-lock' onclick="f0169(4)"></div>
-					</div>
-
-				</div>
-
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-		<!--4. CAPA SUPERIOR: ELEMENTOS FINALES VISUALES DE APOYO-->
-		<div id='iCAPA' class='cBox cTop cFlex'><!--Capa de encima (última), sin acción alguna: muestra elementos visuales de apoyo por ejemplo marca de agua en el centro y los mini indicadores-->
+		<!--5. CAPA SUPERIOR: ELEMENTOS FINALES VISUALES DE APOYO-->
+		<div id='iCAPA' class='cBox cTop cFlex c-X'><!--Capa de encima (última), sin acción alguna: muestra elementos visuales de apoyo por ejemplo marca de agua en el centro y los mini indicadores-->
 			<!--div class='cNeg cFlex cR'>
 			</div-->
-			<div class='cLen cFlex' aria-hidden='true'><!--cabezote de la aplicación-->
+			<div class='cLen cFlex c-G' aria-hidden='true'><!--cabezote de la aplicación-->
 				<!--Plantilla transparente que contiene los iconos en miniatura, el titulo "i info" y la hora-->
 				<!--span id='iI' class='cInfo cX'>
 					<i class="fas fa-info c25Rot"></i>
@@ -1391,10 +1305,8 @@
 			</div>
 		</div>
 
-
-		
-		<!--5. MINI-BOTONES fijos inferiores para pantalla gigante-->
-		<div id='iFilbo' class="cChico cX">
+		<!--6. MINI-BOTONES fijos inferiores para pantalla gigante-->
+		<div id='iFilbo' class='cChico cX'>
 			<span id='fBot1' class='cStop'><!--boton X 1 salir o cancelar onclick='f0047(1)'-->
 				<span class='cBof cFlex'>
 					<i id='fBB1' class='fas fa-times cFran cOff'></i>
@@ -1437,20 +1349,6 @@
 				</span>
 			</span>
 		</div>
-
-
-
-		<!--6. BARRA INFERIOR fija: Braile virtual-->
-		<div id='iBrail' class='cX' aria-hidden='true'>
-			<div class='c1570'>
-				<div id='iBrAi' class='cBraI'>
-				</div>
-			</div>
-		</div>
-
-
-
-
 
 	</div>
 	<audio id='myPito' src='files/alerta.mp3'></audio>

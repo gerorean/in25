@@ -2299,10 +2299,10 @@ const r008B =[['Recursos/ Casillas..', 1, 2, 3, 4, 5, 6, 7],
 
 /*texto alternativo para imagen de ayuda*/
 const mIr008Z =/**/[['Casillas', 1, 2, 3, 4],
-[1, ['What is all this and what is it for?', 'You are on a website, which serves to offer local information to people without or with a certain degree of disability', 'it has accessible elements that facilitate the use and access to information, for example, audio text, signs, text maximum, black background, braille and large buttons'],['letra i con signo de pregunta', 'Estás en un sitio web, que sirve para ofrecer información local a personas sin o con cierto grado de discapacidad', 'cuenta con elementos accesibles que facilitan el uso y acceso a la información, por ejemplo, audio texto, señas, altura máxima, fondo negro, braille y botones grandes'],["C'est quoi tout ça et à quoi ça sert ?", "Vous êtes sur un site Web, qui sert à offrir des informations locales aux personnes sans ou avec un certain degré de handicap", "il a des éléments accessibles qui facilitent l'utilisation et l'accès à l'information, par exemple, texte audio, signes, hauteur maximale, fond noir, braille et gros boutons"],["C'est quoi tout ça et à quoi ça sert ?", "Vous êtes sur un site Web, qui sert à offrir des informations locales aux personnes sans ou avec un certain degré de handicap", "il a des éléments accessibles qui facilitent l'utilisation et l'accès à l'information, par exemple, texte audio, signes, hauteur maximale, fond noir, braille et gros boutons"]],
+[1, ['What is all this and what is it for?', 'You are on a website, which serves to offer local information to people without or with a certain degree of disability', 'it has accessible elements that facilitate the use and access to information, for example, audio text, signs, text maximum, black background and large buttons'],['letra i con signo de pregunta', 'Estás en un sitio web, que sirve para ofrecer información local a personas sin o con cierto grado de discapacidad', 'cuenta con elementos accesibles que facilitan el uso y acceso a la información, por ejemplo, audio texto, señas, altura máxima, fondo negro y botones grandes'],["C'est quoi tout ça et à quoi ça sert ?", "Vous êtes sur un site Web, qui sert à offrir des informations locales aux personnes sans ou avec un certain degré de handicap", "il a des éléments accessibles qui facilitent l'utilisation et l'accès à l'information, par exemple, texte audio, signes, hauteur maximale, fond noir et gros boutons"],["C'est quoi tout ça et à quoi ça sert ?", "Vous êtes sur un site Web, qui sert à offrir des informations locales aux personnes sans ou avec un certain degré de handicap", "il a des éléments accessibles qui facilitent l'utilisation et l'accès à l'information, par exemple, texte audio, signes, hauteur maximale, fond noir et gros boutons"]],
 [2, ['How to navigate?', 'to navigate, in the window there are 6 navigation buttons that go from top to bottom', 'there are 3 buttons on the left side, the square menu button, the diagonal button to cancel or exit and the triangle button up to go up or back', 'and on the right side there are 3 other buttons, the vertical quick information bar button, the round button to accept or enter and the down triangle button to go down or go forward.'],['¿Cómo navegar?', 'para navegar, en la ventana hay 6 botones de navegación que van desde arriba hacia abajo', 'hay 3 botones al lado izquierdo, el botón cuadrado de menú, el botón diagonal para cancelar o salir y el botón de triángulo hacia arriba para subir o retroceder', 'y al lado derecho hay otros 3 botones, el botón barra vertical de información rápida, el botón redondo para aceptar o ingresar y el botón de triángulo hacia abajo para ir abajo o avanzar.'],["Comment naviguer?", "pour naviguer, dans la fenêtre il y a 6 boutons de navigation qui vont de haut en bas", "il y a 3 boutons sur le côté gauche, le bouton menu carré, le bouton diagonal pour annuler ou sortir et le bouton triangle haut pour monter ou dos", "et sur le côté droit il y a 3 autres boutons, le bouton barre d'information rapide verticale, le bouton rond pour accepter ou entrer et le bouton triangle bas pour descendre ou avancer."],["Comment naviguer?", "pour naviguer, dans la fenêtre il y a 6 boutons de navigation qui vont de haut en bas", "il y a 3 boutons sur le côté gauche, le bouton menu carré, le bouton diagonal pour annuler ou sortir et le bouton triangle haut pour monter ou dos", "et sur le côté droit il y a 3 autres boutons, le bouton barre d'information rapide verticale, le bouton rond pour accepter ou entrer et le bouton triangle bas pour descendre ou avancer."]],
 [3, ['How to navigate using a physical keyboard?', 'To enable navigation buttons on a physical keyboard turn on caps lock button', 'square button is 7 or N, diagonal button is 4 or M, triangle up button is 1 or comma, the vertical bar button is 9 or V, the round button is 6, C or space, and the down triangle button is 3, X or tab.'],['¿Cómo navegar usando un teclado físico?', 'Para habilitar los botones de navegación en un teclado físico active el botón de bloqueo de mayúsculas', 'el botón cuadrado es el 7 o la N, el botón diagonal es el 4 o la M, el botón de triángulo hacia arriba es el 1 o la coma, el botón barra vertical es el 9 o la V, el botón redondo es el 6, la C o el espacio, y el botón de triángulo hacia abajo es el 3, la X o el tabulador.'],["Comment naviguer à l'aide d'un clavier physique?", "Pour activer les boutons de navigation sur un clavier physique activez le bouton de verrouillage des majuscules", "le bouton carré est 7 ou N, le bouton diagonal est 4 ou M, le bouton triangle vers le haut est 1 ou virgule, le bouton de la barre verticale est 9 ou V, le bouton rond est 6, C ou espace, et le bouton triangle vers le bas est 3, X ou tabulation."],["Comment naviguer à l'aide d'un clavier physique?", "Pour activer les boutons de navigation sur un clavier physique activez le bouton de verrouillage des majuscules", "le bouton carré est 7 ou N, le bouton diagonal est 4 ou M, le bouton triangle vers le haut est 1 ou virgule, le bouton de la barre verticale est 9 ou V, le bouton rond est 6, C ou espace, et le bouton triangle vers le bas est 3, X ou tabulation."]],
-[4, ['What is the style and what is it for?', 'the style is the first button of the menu, there the user has 9 styles to select and access the information, minimum text, audio text, maximum text, black background, signs and braille', "Each one of these 9 buttons allow the team's resources to be adapted so that the information is as accessible as possible and reaches the users."],['¿Qué es el estilo y para qué sirve?', 'el estilo es el primer botón del menú, allí el usuario cuenta con 9 estilos para seleccionar y acceder a la información, altura mínima, audio texto, altura máxima, fondo negro, señas y braille ', 'cada uno de estos 9 botones permiten adaptar los recursos del equipo para que la informacíon sea lo más accesible posible y llegue hasta los usuarios.'],["Quelles sont les ressources et à quoi ça sert?", "le style est le premier bouton du menu, là l\'utilisateur dispose de 9 styles pour sélectionner et accéder aux informations, texte minimum, texte audio, hauteur maximale, fond noir, panneaux, braille et ", "chacun de ces 9 boutons permet d'adapter les ressources de l'équipe pour que l'information soit accessible et parvienne aux utilisateurs."],["Quelles sont les ressources et à quoi ça sert?", "le style est le premier bouton du menu, là l\'utilisateur dispose de 9 styles pour sélectionner et accéder aux informations, texte minimum, texte audio, hauteur maximale, fond noir, panneaux, braille et ", "chacun de ces 9 boutons permet d'adapter les ressources de l'équipe pour que l'information soit accessible et parvienne aux utilisateurs."]],
+[4, ['What is the style and what is it for?', 'the style is the first button of the menu, there the user has 9 styles to select and access the information, minimum text, audio text, maximum text, black background and signs', "Each one of these 9 buttons allow the team's resources to be adapted so that the information is as accessible as possible and reaches the users."],['¿Qué es el estilo y para qué sirve?', 'el estilo es el primer botón del menú, allí el usuario cuenta con 9 estilos para seleccionar y acceder a la información, altura mínima, audio texto, altura máxima, fondo negro y señas ', 'cada uno de estos 9 botones permiten adaptar los recursos del equipo para que la informacíon sea lo más accesible posible y llegue hasta los usuarios.'],["Quelles sont les ressources et à quoi ça sert?", "le style est le premier bouton du menu, là l\'utilisateur dispose de 9 styles pour sélectionner et accéder aux informations, texte minimum, texte audio, hauteur maximale, fond noir, panneaux, et ", "chacun de ces 9 boutons permet d'adapter les ressources de l'équipe pour que l'information soit accessible et parvienne aux utilisateurs."],["Quelles sont les ressources et à quoi ça sert?", "le style est le premier bouton du menu, là l\'utilisateur dispose de 9 styles pour sélectionner et accéder aux informations, texte minimum, texte audio, hauteur maximale, fond noir, panneaux et ", "chacun de ces 9 boutons permet d'adapter les ressources de l'équipe pour que l'information soit accessible et parvienne aux utilisateurs."]],
 [5, ['style, blah, blah, blah, blah', 'abece 1', 'abece 2'],['estilo, bla, bla, bla, bla', 'abece 1', 'abece 2'],['style, bla, bla, bla, bla', 'abece 1', 'abece 2'],['style, bla, bla, bla, bla', 'abece 1', 'abece 2']],
 [6, ['settings'],['ajustes'],['réglages'],['réglages']],
 [7, ['activities'],['actividades'],['activités'],['활동']]
@@ -2635,8 +2635,8 @@ const canVibrate 	/**/ = window.navigator;//https://stackoverflow.com/questions/
 const canTts 		/**/ = window.speechSynthesis;//(tts= text to speech) tts es el nombre asignado al 'objeto' que 'habla' y es parte de la ventana window
 var casi;//casilla que contiene la imagen y la glosa de la seña que se va a animar
 const centro 		/**/ = [];//vacio o true para mostrar el div en el top de la pantalla {	behavior: 'auto', block: 'center'};//https://stackoverflow.com/questions/8922107/javascript-scrollintoview-middle-alignment  https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
-var colBra1		/**/;//Coleccion de todos los cBra1
-var colBrai		/**/;//Coleccion de todos los cBrai
+////////////////777var colBra1		/**/;//Coleccion de todos los cBra1
+//////////////////var colBrai		/**/;//Coleccion de todos los cBrai
 var colLife7	/**/;//Coleccion de todos los cLifes SEÑAS EN CARRUSEL de ruta
 var colPros3	/**/;//Coleccion de todas las cPros PROSAS de ruta
 //var 	colTxtL			;//Prueba - - Coleccion de todas los zTxtL TEXTOS LOCALES de la ruta
@@ -4590,74 +4590,6 @@ const s00braIdi =/**/[['Nº  SIMBOLO:', '1En', '2Sp', '3Fr', '4Po', '5Al', '6Ar'
 ['88  ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '86  -'],
 ['89  ', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '87   ']
 ];
-
-//							[ID			,Braille	,'SIMBOLO(s):'	],
-const s00brailG =/**/[[0, '⠀', 'espacio, ningun punto'],
-[1, '⠁', 'a 1'],
-[2, '⠂', ','],
-[3, '⠃', 'b 2'],
-[4, '⠄', '.SP \'apóstrofoEN/FR'],
-[5, '⠅', 'k'],
-[6, '⠆', ';'],
-[7, '⠇', 'l'],
-[8, '⠈', 'acentoEN'],
-[9, '⠉', 'c'],
-[10, '⠊', 'i'],
-[11, '⠋', 'f'],
-[12, '⠌', 'í'],
-[13, '⠍', 'm'],
-[14, '⠎', 's'],
-[15, '⠏', 'p'],
-[16, '⠐', '---prefMinusSP???  @SP???  prefSignosEN+ OJO!!! FALTA AGREGAR AL CODIGO ESTA PARTE DEL PREFIJO AL GUION DEL +'],
-[17, '⠑', 'e'],
-[18, '⠒', ':'],
-[19, '⠓', 'h'],
-[20, '⠔', '*   )SP????'],
-[21, '⠕', 'o'],
-[22, '⠖', '¡!  +SP  +FR???   +EN(ADICIONAR PREFIJO(16) 5+2,3,5) OJO!!! FALTA AGREGAR AL CODIGO ESTA PARTE DEL PREFIJO AL GUION DEL +'],
-[23, '⠗', 'r'],
-[24, '⠘', '---------'],
-[25, '⠙', 'd'],
-[26, '⠚', 'j'],
-[27, '⠛', 'g'],
-[28, '⠜', ')'],
-[29, '⠝', 'n'],
-[30, '⠞', 't'],
-[31, '⠟', 'q'],
-[32, '⠠', 'pref mayusculasEN'],
-[33, '⠡', 'âFR'],
-[34, '⠢', '¿?   (SP???'],
-[35, '⠣', '(SP êFR'],
-[36, '⠤', '-'],
-[37, '⠥', 'u'],
-[38, '⠦', '"comillas iniEN/FR'],
-[39, '⠧', 'v'],
-[40, '⠨', 'pref mayusculasSP/FR bastardillaEN(prefijo?)'],
-[41, '⠩', 'îFR'],
-[42, '⠪', 'œFR'],
-[43, '⠫', 'ëFR'],
-[44, '⠬', 'ó  +FR????parece que no y es el 22'],
-[45, '⠭', 'x'],
-[46, '⠮', 'éSP èFR'],
-[47, '⠯', 'çFR'],
-[48, '⠰', 'pref minusculaEN'],
-[49, '⠱', 'ûFR'],
-[50, '⠲', '0 .pto finalEN/FR'],
-[51, '⠳', 'üSP/FR'],
-[52, '⠴', 'comillas termiEN/FR'],
-[53, '⠵', 'z'],
-[54, '⠶', '()EN/FR  =SP????'],
-[55, '⠷', 'áSP àFR'],
-[56, '⠸', 'bastardillaFR(prefijo?)'],
-[57, '⠹', 'ôFR  bastardillaSP???'],
-[58, '⠺', 'w'],
-[59, '⠻', 'ñSP ïFR'],
-[60, '⠼', 'pref númerosEN/SP/FR'],
-[61, '⠽', 'y'],
-[62, '⠾', 'úSP ùFR'],
-[63, '⠿', 'éFR ']
-];
-
 
 
 //MORSE

@@ -154,7 +154,7 @@ const		g00LOGS = [	[  	  0		,0/*0 1[1*/	,0			,0			,'I ACTIVAR ambiente: 0-blanco
 						[	140		,0/*0 1[1*/	,0			,0			,'	CARGAR anuncios en r003'],
 						[	141		,0/*0 1[1*/	,0			,0			,''],
 						[	142		,0/*0 1[1*/	,0			,0			,' 	CONSULTAR a la base de datos por cierta collección'],
-						[	143		,0/*0 1[1*/	,0			,0			,'  ENCONTRAR todos los elementos cBrail'],
+						[	143		,0/*0 1[1*/	,0			,0			,'  quitar!!!!!!!!!!!!!!!!!!!!!!!ENCONTRAR todos los elementos cBrail'],
 						[	144		,0/*0 1[1*/	,0			,0			,'	ESPERAR un momento y dar la orden de cambiar de anuncio'],
 						[	145		,0/*0 1[1*/	,0			,0			,''],
 						[	146		,0/*0 1[1*/	,0			,0			,''],
