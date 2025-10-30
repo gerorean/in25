@@ -10905,7 +10905,7 @@ function hh50()//AJUSTAR estilo texto pequeño
 
 		 	//hh84();//HABILITAR texto negro / blanco
 			hh84();//HABILITAR texto negro / blanco
-			hh27();//HABILITAR texto blanco sobre boton negro
+			//hh27();//HABILITAR texto blanco sobre boton negro
 
 
 
@@ -10938,7 +10938,7 @@ function hh51()//AJUSTAR estilo vibración
 
 
 		 	//hh84();//HABILITAR texto negro / blanco
-			hh84();//HABILITAR texto negro / blanco
+			//hh84();//HABILITAR texto negro / blanco
 			hh27();//HABILITAR texto blanco sobre boton negro
 			
 
@@ -10947,7 +10947,7 @@ function hh51()//AJUSTAR estilo vibración
 			hh19();//HABILITAR tamaño 2
 			//hh20();//texto pequeño
 			//f0092();//HABILITAR bordes superior e inferior
-			hh21(6);//APLICAR color azul
+			hh21(11);//APLICAR color gris
 			f0118();//HABILITAR la luz
 		}
 
@@ -10976,7 +10976,7 @@ function hh53()//AJUSTAR estilo texto
 
 
 		 	//hh84();//HABILITAR texto negro / blanco
-			hh84();//HABILITAR texto negro / blanco
+			//hh84();//HABILITAR texto negro / blanco
 			hh27();//HABILITAR texto blanco sobre boton negro
 
 
@@ -11048,7 +11048,7 @@ function hh56()//AJUSTAR estilo texto máximo
 
 
 		 	//hh28();//HABILITAR texto negro, botón amarillo
-			hh84();//HABILITAR texto negro / blanco
+			//hh84();//HABILITAR texto negro / blanco
 			hh27();//HABILITAR texto blanco sobre boton negro
 
 
@@ -11104,7 +11104,7 @@ function hh58()//AJUSTAR estilo señas
 
 
 
-			hh84();//HABILITAR texto negro / blanco
+			//hh84();//HABILITAR texto negro / blanco
 			hh27();//HABILITAR texto blanco sobre boton negro
 
 
@@ -11113,7 +11113,7 @@ function hh58()//AJUSTAR estilo señas
 			hh19();//HABILITAR tamaño 2
 			//hh20();//texto pequeño
 		 	//f0108();//DESHABILITAR bordes superior e inferior
-			hh21(6);//APLICAR color azul
+			hh21(2);//APLICAR color naranja
 			f0118();//HABILITAR la luz
 		}
 

@@ -146,7 +146,7 @@
 ,.c--Ame
 ,.cAME
 ,.cBack
-,#i--Body
+,#iBody
 ,#iFaro{		background:black}
 
  .cGre{			background:grey}
@@ -183,7 +183,6 @@
 ,.cNeg
 ,.yProsaL
 ,.zProsa
-,#iBody
 ,#i--Un2{		background:var(--cblwh1)}
 
  .cButton
@@ -376,7 +375,6 @@
 
  .cAsk
 ,.c--Infi
-,.cInfo
 ,.cIng
 ,.c--Reloj
 ,#iEnt
@@ -393,6 +391,7 @@
  
  .cAme
 ,.cAME
+,.cInfo
 ,.cSiV
 ,.cTexU
 ,#i--Noti
@@ -461,9 +460,14 @@
 ,.keY{			font-family:Ryyoboto,Cyyentury Gothic,Mnnonaco,Vyyerdana,Tyyahoma,Ayyrial,syyans-serif}
 */
 
-
+/*
  *
-,.keY{			font-family:Ryyoboto,Cyyentury Gothic,Mnnonaco,Verdana,Tyyahoma,Ayyrial,sans-serif}/*        'Monaco','Verdana','Arial',sans-serif}*/
+,.keY{			font-family:Ryyoboto,Cyyentury Gothic,Mnnonaco,Verdana,Tyyahoma,Ayyrial,sans-serif}
+*/
+ .cIwhi
+,.cIyel
+,.keY
+,#iHora{			font-family:Inter,Roboto,'IBM Plex Sans', 'Noto Sans', 'Source Sans 3',Arial,Verdana,Tahoma,sans-serif !important}
 
  .cCero
 ,.cFs0{			font-size:0}
@@ -734,9 +738,9 @@
 
  .c--Vpres{		left:var(--pelo)}
 
- .c--Nada
+ *
 ,.cPadd4
-,.cTapa{		letter-spacing: var(--e, 0.2px)}
+,.cTapa{		letter-spacing: var(--e, 0.2px)!important}
 
  .cCero
 ,.c--Nada{		line-height:0}
@@ -842,7 +846,7 @@
 ,#iCelu
 ,#iFonde
 ,#i--Un1
-,#i--UnI{		 overflow:hidden}
+,#i--UnI{		overflow:hidden}
 
  #iUn1{		 	overflow:scroll}
 
@@ -1042,6 +1046,10 @@
 ,.cInfo
 ,.yProsaL
 ,.zProsa{		text-overflow:clip}/*ellipsis*/
+
+ * {			text-rendering: optimizeLegibility}
+
+ 
 
  .cIyel{		text-shadow:2px 2px 2px var(--cOy),-2px -2px 2px var(--cOy),2px -2px 2px var(--cOy),-2px 2px 2px var(--cOy),0 2px 2px var(--cOy),0 -2px 2px var(--cOy),2px 0 2px var(--cOy),-2px 0 2px var(--cOy)}
 
@@ -1292,6 +1300,8 @@
 ,.cScroll
 ,.cTpres
 ,#iUn1{		  	-ms-overflow-style: none}/* IE y Edge */
+
+* {				-webkit-font-smoothing: antialiased}
 
  .c--Ask
 ,.cAsK
