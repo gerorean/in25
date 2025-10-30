@@ -2326,6 +2326,7 @@ const mIwModeA =/**/[['Casillas', 1, 2, 3, 4],
 [7, 'mode 7: to display braille','modo 7: para mostrar el braille','mode 7: pour afficher le braille','모드 7: 점자 표시'],
 [8, 'count, change','cuenta, cambiar','compte, changer','경쟁, 변화']
 ];
+
 /*
 const wModeA =[['Casillas', 1, 2, 3, 4, 5, 6, 7, 8],
 [1, 'mode 1: to see everything smaller', 'mode 2: to receive vibrations of dots and dashes', 'mode 3: for large print', 'mode 4: to see everything bigger', 'mode 5: to see the text in yellow', 'mode 6: To see the interpreter and disable the audio', 'mode 7: to display braille', 'count, change'],

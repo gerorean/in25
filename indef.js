@@ -10886,12 +10886,7 @@ function hh50()//AJUSTAR estilo texto pequeño
 		{	hOG(50);//mIS(50);
 			//console.error(' - -----hh50-----papas=,',papas);
 			//***g00VARS[45][2] = 1;
-			console.log('|>>>>>>>>>>>>>>>        hh50() AJUSTAR estilo texto pequeño   +++    +++++++++++++ini->    f0126()');
-			
-			
-			
-			
-			
+			console.log('|>>>>>>>>>>>>>>>        hh50() AJUSTAR estilo texto pequeño   +++    +++++++++++++ini->    f0126()');	
 			//f0126();//ACTUALIZAR la ruta
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -10905,11 +10900,18 @@ function hh50()//AJUSTAR estilo texto pequeño
 			f0105();//RESET de velocidad -> 1.0
 			//hh23();//Mudo
 			hh24();//HABILITAR lector de pantalla (sonido)
-		 	hh84();//HABILITAR texto negro / blanco
+
+
+
+		 	//hh84();//HABILITAR texto negro / blanco
+			hh84();//HABILITAR texto negro / blanco
+			hh27();//HABILITAR texto blanco sobre boton negro
+
+
+
+
 			hh19();//HABILITAR tamaño 2
 			//hh20();//texto pequeño
-
-
 			//f0108();//DESHABILITAR bordes superior e inferior
 			hh21(6);//APLICAR color azul		
 			f0118();//HABILITAR la luz
@@ -10920,13 +10922,6 @@ function hh50()//AJUSTAR estilo texto pequeño
 function hh51()//AJUSTAR estilo vibración
 		{	hOU(51);//mIS(51);
 			//***g00VARS[45][2] = 2;
-			
-			
-			
-			
-			
-			
-			
 			//f0126();//ACTUALIZAR la ruta
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -10939,12 +10934,18 @@ function hh51()//AJUSTAR estilo vibración
 			f0105();//RESET de velocidad -> 1.0
 			//hh23();//Mudo
 			hh24();//HABILITAR lector de pantalla (sonido)
-		 	hh84();//HABILITAR texto negro / blanco
+
+
+
+		 	//hh84();//HABILITAR texto negro / blanco
+			hh84();//HABILITAR texto negro / blanco
+			hh27();//HABILITAR texto blanco sobre boton negro
+			
+
+
+
 			hh19();//HABILITAR tamaño 2
 			//hh20();//texto pequeño
-			
-			
-			//__
 			//f0092();//HABILITAR bordes superior e inferior
 			hh21(6);//APLICAR color azul
 			f0118();//HABILITAR la luz
@@ -10959,12 +10960,6 @@ function hh52()//b0052()	//AJUSTAR el tamaño del VISOR Y CARGAR los guiones de 
 function hh53()//AJUSTAR estilo texto
 		{	hOU(53);//mIS(53);
 			//g00VARS[45][2] = 4;
-
-
-
-
-
-
 			//f0126();//ACTUALIZAR la ruta
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -10977,12 +10972,17 @@ function hh53()//AJUSTAR estilo texto
 			f0105();//RESET de velocidad -> 1.0
 			//hh23();//Mudo
 			hh24();//HABILITAR lector de pantalla (sonido)
-		 	hh84();//HABILITAR texto negro / blanco
+
+
+
+		 	//hh84();//HABILITAR texto negro / blanco
+			hh84();//HABILITAR texto negro / blanco
+			hh27();//HABILITAR texto blanco sobre boton negro
+
+
+
 			hh30();//HABILITAR tamaño 4 mediano
 			hh21(3);//APLICAR color amarillo
-
-
-
 			//__
 			//f0092();//HABILITAR bordes superior e inferior
 			f0118();//HABILITAR la luz	
@@ -10991,13 +10991,6 @@ function hh53()//AJUSTAR estilo texto
 function hh54()//AJUSTAR estilo audio
 		{	hOU(54);//mIS(54);
 			//g00VARS[45][2] = 3;
-
-
-
-
-
-
-
 			//f0126();//ACTUALIZAR la ruta
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -11011,9 +11004,6 @@ function hh54()//AJUSTAR estilo audio
 			hh24();//HABILITAR lector de pantalla (sonido)
 		 	hh84();//HABILITAR texto negro / blanco	
 			hh30();//HABILITAR tamaño 4 mediano
-
-
-			//___
 			//f0092();//HABILITAR bordes superior e inferior
 		 	hh21(3);//APLICAR color amarillo
 		 	f0118();//HABILITAR la luz
@@ -11040,12 +11030,6 @@ function hh55()//b0055()	//OCULTAR todos los botones de tamaño
 function hh56()//AJUSTAR estilo texto máximo
 		{	hOU(56);//mIS(56);
 			//***g00VARS[45][2] = 5;
-
-
-
-
-
-
 			//f0126();//ACTUALIZAR la ruta
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -11059,12 +11043,19 @@ function hh56()//AJUSTAR estilo texto máximo
 			f0105();//RESET de velocidad -> 1.0
 			//hh23();//Mudo
 		 	hh24();//HABILITAR lector de pantalla (sonido)
-		 	hh28();//HABILITAR texto negro, botón amarillo
+
+
+
+
+		 	//hh28();//HABILITAR texto negro, botón amarillo
+			hh84();//HABILITAR texto negro / blanco
+			hh27();//HABILITAR texto blanco sobre boton negro
+
+
+
+
 		 	hh33();//HABILITAR tamaño 7
 			hh21(13);//APLICAR color violeta
-
-
-			//___
 			//f0092();//HABILITAR bordes superior e inferior
 			f0118();//HABILITAR la luz
 		}
@@ -11085,7 +11076,9 @@ function hh57()//AJUSTAR estilo fondo negro
 			f0105();//RESET de velocidad -> 1.0
 			//hh23();//Mudo
 			hh24();//HABILITAR lector de pantalla (sonido)
-			hh83();//HABILITAR texto amarillo boton negro simil hh27()
+
+			hh83();//HABILITAR texto amarillo boton negro
+
 			hh21(5);//APLICAR color turquesa
 			hh30();//HABILITAR tamaño 4 mediano
 			//f0092();//HABILITAR bordes superior e inferior
@@ -11096,12 +11089,6 @@ function hh57()//AJUSTAR estilo fondo negro
 function hh58()//AJUSTAR estilo señas
 		{	hOU(58);//mIS(58);
 			//g00VARS[45][2] = 7;
-
-
-
-
-
-
 			//f0126();//ACTUALIZAR la ruta
 			f0119(1);//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
@@ -11114,13 +11101,17 @@ function hh58()//AJUSTAR estilo señas
 			hh25();//DESHABILITAR i1 (sin Ingles de apoyo)
 			f0105();//RESET de velocidad -> 1.0
 			hh23();//Mudo
+
+
+
 			hh84();//HABILITAR texto negro / blanco
+			hh27();//HABILITAR texto blanco sobre boton negro
+
+
+
+
 			hh19();//HABILITAR tamaño 2
 			//hh20();//texto pequeño
-
-
-
-			//__
 		 	//f0108();//DESHABILITAR bordes superior e inferior
 			hh21(6);//APLICAR color azul
 			f0118();//HABILITAR la luz
@@ -11746,13 +11737,9 @@ function hh87()//RESET de ACCESO
 			switch (g00VARS[45][2])
 			{	case 1: hh50();break;
 				case 2: hh51();break;
-				//case 3: hh54();break;
 				case 3: hh53();break;
 				case 4: hh56();break;
-				case 5: hh58();break;// hh57();break;
-				//case 6: hh58();break;
-				//case 7: hh59();break;
-				//case 9: hh60();break;
+				case 5: hh58();break;
 			}
 			gRuta = 1;
 			gFoco = 8;
