@@ -32,11 +32,9 @@ function fERROR()//adicionar para probar y capturar error
 			{	console.log('[Probando...');
 
 				//lineas a probar
-				iV2d.style.backgroundColor = 'yellow';
 			}
 			catch(err)
 			{	fff();
-				iV2d.style.backgroundColor = 'red';
 				console.log('[************************** error = ',err,'*********************************]');
 			};
 		}

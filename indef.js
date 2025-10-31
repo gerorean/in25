@@ -95,29 +95,9 @@ function f0000()	//ALISTAR ambiente en 0-blanco, 1-desarrollo o 2-producción (S
 					tM = vF * cut;console.log('tM='+ tM);//
 					//speed = g00VARS[44][2];//Velocidad configurada por el usuario
 					canTts.onvoiceschanged = f0002;//L Asincrona => Carga el objeto voices y maneja las voces disponibles cuando hay cambios en la voz
-					if (canVibrate)//si puede vibrar:  on Firefox, Chrome and Safari on some iOS devices the code will be broken at this line
-					{	iV2e.style.backgroundColor = 'yellow';
-						//console.log(' + + + 2e + yellow canVibrate');
-						//window.navigator.vibrate(0);//ver si hacer un try-catch aquí para quitar el error "Blocked call to navigator.vibrate because user hasn't tapped on the frame or any embedded frame yet", en Safari si se presenta el error de vibración por falta de interacción no continua, se detiene el prog
-					}
-					else
-					{	iV2e.style.backgroundColor = 'red';
-						//console.log(' + + + 2e + red canVibrate');
-					}
 					if (canTts)//si puede vibrar:  on Firefox, Chrome and Safari on some iOS devices the code will be broken at this line
-					{	iV2d.style.backgroundColor = 'yellow';
-						//console.log(' + + + 2d + yellow canTts');
-						canTts.cancel();//cancela los anuncios que estén corriendo
-					}
-					else
-					{	iV2d.style.backgroundColor = 'red';
-						//console.log(' + + + 2d + red canTts');
-					}
-
-
-
-
-					
+					{	canTts.cancel();//cancela los anuncios que estén corriendo
+					}	
 					//f0043(1);//L HACER faro off y si puede vibrar PARAR cualquier vibración anterior (1: por reset)
 				
 
@@ -178,41 +158,17 @@ function f0001()//CONSEGUIR la hora local actual
 function f0002()//CONSEGUIR la voz (GetVoices), Manejador de eventos cuando las voces cambian...
 		{	lOL(2);
 			//console.time('duracionCargaVoces');//:/Switch S1
-			iV1e.style.backgroundColor = 'white';
 			var timeout = 0;
 			const maxTimeout = 10000;//2000 Tiempo máximo para conseguir las voces
 			const interval = 1000;//250
 			const loadVoices = function(cb) 
-			{	iV1d.style.backgroundColor = 'orange';//inici asinc
-				ii[0] += 1;
-				switch (ii[0])//Contador de color:
-				{	case (1):iV1c.style.backgroundColor = 'blue';break;
-					case (2):iV1c.style.backgroundColor = 'lightgreen';break;
-					case (3):iV1c.style.backgroundColor = 'yellow';break;
-					case (4):iV1c.style.backgroundColor = 'orange';break;
-				}
-				if(5 <= ii[0])
-				{	if(10 <= ii[0])
-					{	iV1c.style.backgroundColor = 'white';
-					}
-					else
-					{	iV1c.style.backgroundColor = 'red';
-					}
-				}
+			{	ii[0] += 1;
 				voices = canTts.getVoices()//__/:__[voices] = [window.voices] es un objeto de window no requiere declararse, consigue las voces que esten disponibles
 				if (timeout >= maxTimeout)
-			  	{	iV1a.style.backgroundColor = 'red';
-			  		return cb(new Error('[LoadVoices max timeout exceeded]'))
+			  	{	return cb(new Error('[LoadVoices max timeout exceeded]'))
 			  	}
-			  	else
-			  	{	iV1a.style.backgroundColor = 'yellow';
-			  	}
-				if (voices.length > 0)
-				{	iV1b.style.backgroundColor = 'yellow';
-					return cb(undefined, voices)
-			  	}
-			  	else
-			  	{	iV1b.style.backgroundColor = 'red';
+			  	if (voices.length > 0)
+				{	return cb(undefined, voices)
 			  	}
 			  	timeout += interval;
 			  	setTimeout(function()
@@ -220,14 +176,9 @@ function f0002()//CONSEGUIR la voz (GetVoices), Manejador de eventos cuando las 
 			  	}	,interval);
 			}	
 			loadVoices(function(err, voices)
-			{	iV1d.style.backgroundColor = 'blue';//fin asin
-				if (err)//SI hay error..
-				{	iV2f.style.backgroundColor = 'red';
-					console.log('[Voices not loaded and not available]');	
+			{	if (err)//SI hay error..
+				{	console.log('[Voices not loaded and not available]');	
 					return console.error(err);
-				}
-				else
-				{	iV2f.style.backgroundColor = 'lightgreen';
 				}
 				//g00VARS[60][2] = 1;//Voces cargadas - hay que quitar este campo porque pueden cargarse voces por defecto en el equipo, voices es bueno que se cargue pero no es necesario para que funcione
 				console.log('[Voices API loaded and available]');
@@ -258,11 +209,9 @@ function f0003()//PRODUCIR pulsaciones
 				iHora.innerHTML = miHora;// + "<div id='iMenu' class='cFlex cR'></div>";
 				if(flip)//CONMUTAR on/off el pulso lento
 				{	flip = 0;
-					iV1f.style.backgroundColor = 'grey';
 				}
 				else
 				{	flip = 1;
-					iV1f.style.backgroundColor = 'pink';
 				}
 			}
 			else
@@ -1834,7 +1783,7 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 						g00VARS[65][2] = window.outerHeight;//.innerHeight;//ventana actual con navegador , outerHeight;navegador completo
 						
 						if(g00VARS[65][2] < 1500)//Si alto menor de 2000px (pantalla pequeña o normal) OCULTAR la fila de botones inferior (Filbo)
-						{ 	iNt.style.height = 'calc(35% - 5vh)';//'calc(35% - var(--kdot) - 0.5vh)';//intM.style.height = 'calc(35vh - var(--kdot) - 0.5vh)'; -- --- 0.5vh - max(var(--z),5vh) - var(--kdot))
+						{ 	iNt.style.height = 'calc(35% - 5vh)';//
 							iFilbo.classList.add('cX');
 							iCelu.classList.remove('cCel1');
 							iCelu.classList.add('cCel0');
@@ -1844,7 +1793,6 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 							//iTia.classList.add('cTi0');
 							//iTio.classList.remove('cTi1');
 							//iTio.classList.add('cTi0');
-							iV6b.style.backgroundColor = 'blue';
 						}
 						else//Si es igual o mayor de 2000px (pantalla muy alta) MOSTRAR la fila de botones inferior (Filbo)
 						{	iNt.style.height = 'calc(35% - 5vh - 5vh)';//calc(35% - max(var(--z),5vh))';//calc(35vh - max(var(--z),5vh))
@@ -1857,7 +1805,6 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 							//iTia.classList.add('cTi1');
 							//iTio.classList.remove('cTi0');
 							//iTio.classList.add('cTi1');
-							iV6b.style.backgroundColor = 'yellow';
 						}
 						
 						g00VARS[65][3] = window.outerWidth;//.innerWidth;//ventana actual con navegador , outerWidth;navegador completo
@@ -2052,10 +1999,9 @@ function f0022()//MAXIMIZAR la pantalla
 					} else if (document.msExitFullscreen) { // Para IE11
 						document.msExitFullscreen();
 					}
-					iV6c.style.backgroundColor = 'green';//salir de la pantalla?
-				} else {
-					const elem = document.documentElement;
-					iV6d.style.backgroundColor = 'yellow';//orden de maximizar
+				}
+				else
+				{	const elem = document.documentElement;
 					// Intentamos entrar en pantalla completa
 					if (elem.requestFullscreen) {
 						elem.requestFullscreen();
@@ -2066,11 +2012,9 @@ function f0022()//MAXIMIZAR la pantalla
 					} else {
 						// Manejo para iOS específicamente
 						const iOSfullscreen = window.innerWidth == screen.width && window.innerHeight == screen.height;
-						iV6d.style.backgroundColor = 'green';//analizando mac os
-						if (!iOSfullscreen) {
-							// Intentamos expandir el documento al tamaño de la pantalla
+						if (!iOSfullscreen)
+						{	// Intentamos expandir el documento al tamaño de la pantalla
 							elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-							iV6c.style.backgroundColor = 'red';//orden de maximizar mac os
 						}
 					}
 				}
@@ -2143,12 +2087,9 @@ function f0025(textLoc,textInt)//Decir() PREPARAR los anuncios local e internaci
 
 function f0026(textLoc,textInt)//Enunc1() DECIR el anuncio uno (local) y darle el paso al anuncio dos de la TAPA
 		{	lOG(26);
-			//iV3e.style.backgroundColor = 'white';
 			hh82(1);//AJUSTAR velocidad por defecto
 			if(textLoc !== '')//Si - no esta vacio
-			{	iV1l.style.backgroundColor = 'yellow';
-
-				toSpeak1 = new SpeechSynthesisUtterance();
+			{	toSpeak1 = new SpeechSynthesisUtterance();
 				toSpeak1.text = textLoc;//(variable con el texto que va a leer)//Prueba
 
 				//--
@@ -2188,10 +2129,6 @@ function f0026(textLoc,textInt)//Enunc1() DECIR el anuncio uno (local) y darle e
 					voices.forEach(function(voice)
 					{	if(voice.name === selectedVoiceName1)
 						{	toSpeak1.voice = voice;
-							iV1L.style.backgroundColor = 'lightgreen';
-						}
-						else
-						{	iV1L.style.backgroundColor = 'red';
 						}
 					});
 				}
@@ -2229,7 +2166,6 @@ function f0027(textInt)//L Enunc2() DECIR el anuncio dos de la TAPA
 		{	lOU(27);//lOL
 			console.log('mmm');
 			hh82(1);//AJUSTAR velocidad por defecto
-			iV1i.style.backgroundColor = 'yellow';
 			var toSpeak2 = new SpeechSynthesisUtterance();//es el nombre del 'enunciado' que se van a 'decir'
 			toSpeak2.text = textInt;
 			toSpeak2.rate = speed;//velocidad 0 - 3.6
@@ -2241,7 +2177,6 @@ function f0027(textInt)//L Enunc2() DECIR el anuncio dos de la TAPA
 			voices.forEach(function(voice)
 			{	if(voice.name === selectedVoiceName2)
 				{	toSpeak2.voice = voice;
-					iV1I.style.backgroundColor = 'lightgreen';
 				}
 			});
 			if(g00VARS[47][2] == 2)
@@ -2738,11 +2673,6 @@ f0032()//I PREPARAR la lectura de la casilla, o Tapa Informativa donde esta el f
 
 function f0033(textLoc,textInt)//25Decir() PREPARAR los anuncios local e internacional de la RUTA
 		{	lOI(33);
-			iV3e.style.backgroundColor = 'white';	
-
-
-
-// ... ... ... Aquí Voy!! ... ... ...
 			g00VARS[56][2] += 1;//tarea1
 			g00VARS[56][4] += 1.5;//tarea2
 			g00VARS[56][5] += 1;//tarea 3
@@ -2759,12 +2689,8 @@ function
 f0034(textLoc,textInt)//26Enunc1() DAR el anuncio local de la RUTA
 		{	lOG(34);
 			hh82();//AJUSTAR velocidad DEL USUARIO
-			//iV3e.style.backgroundColor = 'white';
-		    iVol.style.backgroundColor = 'purple';
 			if(textLoc !== '')
-			{	//iV3d.style.backgroundColor = 'green';
-
-				toSpeak1 = new SpeechSynthesisUtterance();
+			{	toSpeak1 = new SpeechSynthesisUtterance();
 				toSpeak1.text = textLoc;//(variable con el texto que va a leer)//Prueba
 
 				//--
@@ -2804,10 +2730,6 @@ f0034(textLoc,textInt)//26Enunc1() DAR el anuncio local de la RUTA
 					voices.forEach(function(voice)
 					{	if(voice.name === selectedVoiceName1)
 						{	toSpeak1.voice = voice;
-							iVoL.style.backgroundColor = 'lightgreen';
-						}
-						else
-						{	iVoL.style.backgroundColor = 'red';
 						}
 					});
 				}
@@ -2855,9 +2777,6 @@ f0034(textLoc,textInt)//26Enunc1() DAR el anuncio local de la RUTA
 					f0037();//REINICIAR las variables de control del speak SI HAY ERROR de desbordamiento
 				}
 			}
-			else
-			{	//iV3d.style.backgroundColor = 'red';
-			}
 		}
 
 function 
@@ -2865,7 +2784,6 @@ f0035(textInt)//27Enunc2() DAR el anuncio internacional de la RUTA
 		{	lOU(35);
 			hh82();//AJUSTAR velocidad DEL USUARIO
 			var toSpeak2 = new SpeechSynthesisUtterance();//es el nombre del 'enunciado' que se van a 'decir'
-			iVoi.style.backgroundColor = 'yellow';
 			toSpeak2.text = textInt;
 			toSpeak2.rate = speed;//velocidad 0 - 3.6
 			toSpeak2.volume = 1;//g00VARS[45][2];
@@ -2876,7 +2794,6 @@ f0035(textInt)//27Enunc2() DAR el anuncio internacional de la RUTA
 			voices.forEach(function(voice)
 			{	if(voice.name === selectedVoiceName2)
 				{	toSpeak2.voice = voice;
-					iVoI.style.backgroundColor = 'lightgreen';
 				}
 			});
 			//canTts.speak(toSpeak2);
@@ -3080,8 +2997,6 @@ function f0042()//HACER faro on y VIBRAR
 						if (isIOS()) {
 							
 							
-							iV6f.style.backgroundColor = 'red';//es mac os
-							iV6e.style.backgroundColor = 'yellow';//dejar de vibrar en mac os
 							console.log(' + + + 6e yellow 42');
 							//console.log(' + + + 6f + yellow isIOS');
 							// Vibrar en iOS (utilizando una animación CSS)
@@ -3095,13 +3010,11 @@ function f0042()//HACER faro on y VIBRAR
 								
 								yHear.classList.remove('vibrate-ios');
 								//document.body.classList.remove('vibrate-ios');
-								iV6e.style.backgroundColor = 'gray';//dejar de vibrar en mac os
 								console.log(' + + + 6e purple 42');
 							}, 300);
 
 							
 						} else {
-							iV6f.style.backgroundColor = 'green';//No es un mac os
 							//console.log(' + + + 6f + green !isIOS');
 							// Vibrar en otros dispositivos (utilizando navigator.vibrate si está disponible)
 							if (navigator.vibrate) {
@@ -3185,12 +3098,7 @@ function f0043()//L HACER faro off y si puede vibrar PARAR cualquier vibración 
 
 
 				if (canVibrate)//si puede vibrar:  on Firefox, Chrome and Safari on some iOS devices the code will be broken at this line
-				{	//iV2f.style.backgroundColor = 'yellow';//
-					
-					
-					
-					
-					
+				{	
 					//window.navigator.vibrate(0);//ver si hacer un try-catch aquí para quitar el error "Blocked call to navigator.vibrate because user hasn't tapped on the frame or any embedded frame yet"
 				
 				
@@ -3209,21 +3117,16 @@ function f0043()//L HACER faro off y si puede vibrar PARAR cualquier vibración 
 							//.style.backgroundColor = 'yellow';//es mac os
 							// Vibrar en iOS (utilizando una animación CSS)
 							//document.body.classList.add('vibrate-ios');
-							iV6f.style.backgroundColor = 'red';//vibrar en mac os
 							//setTimeout(function () {
 								
 							
 							    yHear.classList.remove('vibrate-ios');
 								//document.body.classList.remove('vibrate-ios');
-								iV6e.style.backgroundColor = 'gray';//dejar de vibrar en mac os
 								console.log(' + + + 6e gray 43');
 							//}, 5000);
 						} else {
 
 							//faro OFF
-							iV6f.style.backgroundColor = 'green';//No es un mac os
-							iV6e.style.backgroundColor = 'purple';//dejar de vibrar en mac os
-
 							/* 4a */
 							if (secuenciaIntervalo) {
 								clearInterval(secuenciaIntervalo);//interrumpe la serie de vibraciones
@@ -3251,9 +3154,7 @@ function f0043()//L HACER faro off y si puede vibrar PARAR cualquier vibración 
 				
 	
 					//Còdigo de chat gpt para vibrar en macos..
-					//iV6f.style.backgroundColor = 'yellow';//orden de vibrar mac os
-				
-				
+					
 				
 				
 				
@@ -6763,10 +6664,6 @@ function f0109()//hh89 QUITAR la presentación
 			////////}
 			ini1 = false;//Desactiva la marquesina local
 			ini2 = false;//Desactiva la marquesina en ingles
-			iV2a.style.backgroundColor = 'grey';
-			iV2b.style.backgroundColor = 'grey';
-			iV2c.style.backgroundColor = 'grey';
-			//iV2d.style.backgroundColor = 'grey';
 			iPreAV.innerHTML = '';
 			if(g00VARS[5][2])//Si esta i1..
 			{	inteL.innerHTML = '';
@@ -6802,28 +6699,13 @@ function f0110()//hh90 PERMITIR el sonido despues de un tiempo
 
 function f0111(can)//hh91 CANCELAR salida de audio y vibraciones
 		{	lOG(111);
-			iV3d.style.backgroundColor = 'white';	
 			f0045();//DETENER vibraciones parpadeos e intervalos pendientes	
 			if(canTts.speaking)//Si esta dando un anuncio
-			{	//iV2e.style.backgroundColor = 'yellow';//	
-				canTts.cancel();//cancela los anuncios que están corriendo
-				if(canTts.speaking)//Si aún esta dando un anuncio
-				{	iV3c.style.backgroundColor = 'red';
-				}
-				else
-				{	iV3c.style.backgroundColor = 'green';
-				}
+			{	canTts.cancel();//cancela los anuncios que están corriendo
 				console.log('<<<<<<< D E T E N I D O  ____________________D E T E N I D O_____________________________D E T E N I D O____________>>>>>>>');
 				if(can)//Si desde f0025() o de f0076() hay orden de cancelar permiso de pasar al anuncio uno
 				{	g00VARS[12][2] = false;//Cancela el permiso de pasar al anuncio uno
-					iV3b.style.backgroundColor = 'red';
 				}
-				else
-				{	iV3b.style.backgroundColor = 'green';
-				}
-			}
-			else
-			{	//iV2e.style.backgroundColor = 'purple';
 			}
 		}
 
@@ -6873,7 +6755,6 @@ function f0114(el)//hh94 PONER a marchar la marquesina local
 			progresi = progreso;//posición vertical de la marquesina local
 			progress = progreso;//posición vertical de la marquesina en ingles
 			ini1 = false;//Desactiva la marquesina local
-			iV2a.style.backgroundColor = 'orange';
 			fiLa[0] = 0;
 			function koop()
 			{	progress = progress - (hFila * nFila[2]);//deltAV;//10;//(speed * kmar);
@@ -6881,8 +6762,7 @@ function f0114(el)//hh94 PONER a marchar la marquesina local
 				//console.log(' - - - ==111 uuu progress=',progress+', ini1=',ini1);
 			
 				if(fiLa[0] >= nFila[0])//si la fila es mayor o igual que las filas del objeto que debe momstrar..  debe terminar de subir más filas STOP local!!!
-				{	iV2b.style.backgroundColor = 'black';
-					ini1 = false;//Desactiva la marquesina local
+				{	ini1 = false;//Desactiva la marquesina local
 					//console.log(' - - - ==222 ini1=',ini1);
 					if(g00VARS[5][2])//Si esta i1
 					{	if(!ini2)//Espera a ver Si la bandera ini2(ingles) también esta off, aquí espera a que ini2 sea = a 0, si esta on es porque el ingles no ha terminado
@@ -6970,7 +6850,6 @@ function f0115(el)//hh95 PONER a marchar la marquesina en ingles
 			*/
 
 			ini2 = false;//Desactiva la marquesina INGLES
-			iV2c.style.backgroundColor = 'orange';
 			fiLa[1] = 0;
 
 			console.log(' == uuu progresi=',progresi+'; elHeight=',elHeight+' ini2=',ini2);
@@ -6980,8 +6859,7 @@ function f0115(el)//hh95 PONER a marchar la marquesina en ingles
 				console.log(' - - - ==111 uuu progresi=',progresi+', ini2=',ini2);
 			
 				if(fiLa[1] >= nFila[1])//si la fila es mayor o igual que las filas del objeto que debe momstrar..  debe terminar de subir más filas STOP local!!!
-				{	iV2c.style.backgroundColor = 'black';
-					console.log(' - - - ==222 uuu progresi=',progresi+', ini2=',ini2);
+				{	console.log(' - - - ==222 uuu progresi=',progresi+', ini2=',ini2);
 					ini2 = false;//Desactiva la marquesina local
 					if(!ini1)//Espera y mira si la bandera ini1(local) esta off, aquí espera a que ini1 sea = a 0, si esta on es porque el local no ha terminado
 					{	f0144();//ESPERAR un momento y dar la orden de cambiar de anuncio
@@ -7019,15 +6897,11 @@ function f0115(el)//hh95 PONER a marchar la marquesina en ingles
 			var clone = content.cloneNode(true);//https://www.w3schools.com/jsref/met_node_clonenode.asp
 			container.appendChild(clone);//https://www.w3schools.com/jsref/met_node_appendchild.asp
 			ini2 = false;//Desactiva la marquesina en ingles
-			iV2c.style.backgroundColor = 'orange';
 			function loop()
 			{	progresi = progresi - (speed * kmar);
 				if(progresi <= (progreso - elHeight) && bPro[1])
 				{  	bPro[1] = 0;//deshabilita la bandera bPro[1]
 					nmarqi += 1;
-					if(nmarqi == 2)
-					{	iV2c.style.backgroundColor = 'black';
-					}
 					console.log('nmarqi=',nmarqi);
 					if(nmarqi == 3)
 					{ 	console.log('nmarqi = 3 STOP!!!');
@@ -7096,10 +6970,6 @@ function f0115(el)//PONER a marchar la marquesina en ingles
 
 function f0116()//hh96 PONER a marchar las marquesinas
 		{	lOG(116);
-			iV2a.style.backgroundColor = 'black';
-			iV2b.style.backgroundColor = 'black';
-			iV2c.style.backgroundColor = 'black';
-			//iV2d.style.backgroundColor = 'black';
 			setTimeout(function()
 			{	
 				//progreso = parseInt(iNot2.offsetHeight);//;parseInt(iNot2.offsetHeight/2);//la mitad del alto de la marquesina!!
@@ -9639,20 +9509,6 @@ f0164(p)	//ASIGNAR voces según el idioma si (p) viene de f0026  si no viene de 
 					voices.forEach(function(voice)
 					{	if(voice.name === selectedVoiceName1)
 						{	toSpeak1.voice = voice;
-							if(p)
-							{	iV1L.style.backgroundColor = 'lightgreen';
-							}
-							else
-							{	iVoL.style.backgroundColor = 'lightgreen';  
-							}
-						}
-						else
-						{	if(p)
-							{	iV1L.style.backgroundColor = 'red';
-							}
-							else
-							{	iVoL.style.backgroundColor = 'red';
-							}
 						}
 					});
 				}

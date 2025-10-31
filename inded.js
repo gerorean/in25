@@ -5685,12 +5685,10 @@ const
 		try {
 			document.createEvent('TouchEvent');
 			touch = 1;
-			iV6a.style.backgroundColor = 'yellow';
 			console.log('pantalla CON TOUCH!');
 		}
 		catch (e) {
 			touch = 0;
-			iV6a.style.backgroundColor = 'blue';
 			////pv = false;//no requiere PRIMER INTERACCION CON EL TOUCH
 			////pw = false;//no requiere PRIMER INTERACCION CON EL TOUCH
 			console.log('pantalla SIN TOUCH!');
