@@ -775,7 +775,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 				mIr003B[1][2][0] = dExt[3];//53;
 
 
-				//v9 = '<img src="'+(kTapa0[bus][2]||'files/chapinero.jpg')+'" class="c1x0">';
+				//v9 = '<img src="'+(kTapa0[bus][2]||'files/chapinero.jpg')+'" class="c1xO">';
 				//console.error('|> Flag  -> hh62');
 				/*
 				mIr003A[1][id][0] = mIkTapaI[25][id] + mIkComun[1][id];// +', '+ kLugar[id][1];
@@ -989,7 +989,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 							switch(mIr001B[v4][1])//Tipo de icono/imagen.. 0-3			
 							{	case 0://Imagen dinámica
 									f0123(mIr001B[v4][2]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0			
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 								break;
 								case 1://Icono dinámico
 									v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[mIr001B[v4][2]][2]+' cAjust8"></i></div>';			
@@ -999,7 +999,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 								break;
 								case 3://Imagen estática
 									f0123(mIr001B[v4][2]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0			
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 								break;
 								case 4://Video estático
 									v02 += '<div class="c1x1 cZIn"></div>';
@@ -1032,8 +1032,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 							{	case 0://Imagen dinámica
 									//Control id
 									f0123(mIr002B[v4][2]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r002B[2][v4]][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r002B[2][v4]][2]+'" class="c1xO"></div>';
 								break;
 								case 1://Icono dinámico
 									v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[mIr002B[v4][2]][2]+' cAjust8"></i></div>';
@@ -1044,8 +1044,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 								case 3://Imagen estática
 									//Control id
 									f0123(mIr002B[v4][2]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r002B[2][v4]][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r002B[2][v4]][2]+'" class="c1xO"></div>';
 								break;
 								case 4://Video estático
 									v02 += '<div class="c1x1 cZIn"></div>';
@@ -1107,7 +1107,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 							{	switch(mIr003B[v4][1][mIr003B[v4][3]])//[0])//Tipo de icono/imagen.. 0-3
 								{	case 0://Imagen dinámica
 										f0123(mIr003B[v4][2][0]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 									break;
 									case 1://Icono dinámico
 										v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[mIr003B[v4][2][mIr003B[v4][3]]][2]+' cAjust8"></i></div>';
@@ -1117,7 +1117,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 									break;
 									case 3://Imagen estática
 										f0123(mIr003B[v4][2][mIr003B[v4][3]]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 									break;
 									case 4://Video estático
 										v02 += '<div class="c1x1 cZIn"></div>';
@@ -1156,7 +1156,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 							switch(mIr004B[v4][1])//Tipo de icono/imagen.. 0-3
 							{	case 0://Imagen dinámica
 									f0123(mIr004B[v4][2]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 								break;
 								case 1://Icono dinámico
 									v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[mIr004B[v4][2]][2]+' cAjust8"></i></div>';
@@ -1166,7 +1166,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 								break;
 								case 3://Imagen estática
 									f0123(mIr004B[v4][2]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 								break;
 								case 4://Video estático
 									v02 += '<div class="c1x1 cZIn"></div>';
@@ -1199,8 +1199,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 							switch(r005B[1][v4])//Tipo de icono/imagen.. 0-3
 							{	case 0://Imagen dinámica
 									f0123(r005B[2][v4]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r005B[2][v4]][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r005B[2][v4]][2]+'" class="c1xO"></div>';
 								break;
 								case 1://Icono dinámico
 									v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[r005B[2][v4]][2]+' cAjust8"></i></div>';
@@ -1210,8 +1210,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 								break;
 								case 3://Imagen estática
 									f0123(r005B[2][v4]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r005B[2][v4]][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r005B[2][v4]][2]+'" class="c1xO"></div>';
 								break;
 								case 4://Video estático
 									v02 += '<div class="c1x1 cZIn"></div>';
@@ -1241,8 +1241,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 							switch(r006B[1][v4])//Tipo de icono/imagen.. 0-3
 							{	case 0://Imagen dinámica
 									f0123(r006B[2][v4]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r006B[2][v4]][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r006B[2][v4]][2]+'" class="c1xO"></div>';
 								break;
 								case 1://Icono dinámico
 									v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[r006B[2][v4]][2]+' cAjust8"></i></div>';
@@ -1252,8 +1252,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 								break;
 								case 3://Imagen estática
 									f0123(r006B[2][v4]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r006B[2][v4]][2]+'" class="c1x0"></div>';
+									v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+								//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r006B[2][v4]][2]+'" class="c1xO"></div>';
 								break;
 								case 4://Video estático
 									v02 += '<div class="c1x1 cZIn"></div>';
@@ -1284,8 +1284,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 								switch(r007B[1][v4])//Tipo de icono/imagen.. 0-3
 								{	case 0://Imagen dinámica
 										f0123(r007B[2][v4]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-									//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4]][2]+'" class="c1x0"></div>';
+										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+									//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4]][2]+'" class="c1xO"></div>';
 									break;
 									case 1://Icono dinámico
 										v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[r007B[2][v4]][2]+' cAjust8"></i></div>';
@@ -1295,8 +1295,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 									break;
 									case 3://Imagen estática
 										f0123(r007B[2][v4]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-									//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4]][2]+'" class="c1x0"></div>';
+										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+									//	v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4]][2]+'" class="c1xO"></div>';
 									break;
 									case 4://Video estático
 										v02 += '<div class="c1x1 cZIn"></div>';
@@ -1349,8 +1349,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 								{	switch(r007B[1][v4][r007B[3][v4]])//Tipo de icono/imagen.. 0-3
 									{	case 0://Imagen dinámica
 											f0123(r007B[2][v4][r007B[3][v4]]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-											v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-											//v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4][r007B[3][v4]]][2]+'" class="c1x0"></div>';
+											v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+											//v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4][r007B[3][v4]]][2]+'" class="c1xO"></div>';
 										break;
 										case 1://Icono dinámico
 											v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[r007B[2][v4][r007B[3][v4]]][2]+' cAjust8"></i></div>';
@@ -1360,8 +1360,8 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 										break;
 										case 3://Imagen estática
 											f0123(r007B[2][v4][r007B[3][v4]]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-											v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
-											//v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4][r007B[3][v4]]][2]+'" class="c1x0"></div>';
+											v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
+											//v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[r007B[2][v4][r007B[3][v4]]][2]+'" class="c1xO"></div>';
 										break;
 										case 4://Video estático
 											v02 += '<div class="c1x1 cZIn"></div>';
@@ -1441,7 +1441,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 							{	switch(mIr008B[v4][1][mIr008B[v4][3]])//Tipo de icono/imagen.. 0-3
 								{	case 0://Imagen dinámica
 										f0123(mIr008B[v4][2][mIr008B[v4][3]]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 									break;
 									case 1://Icono dinámico
 										v02 += '<div class="c1x1 cZIn"><i class="'+kTapa1[mIr008B[v4][2][mIr008B[v4][3]]][2]+' cAjust8"></i></div>';
@@ -1451,7 +1451,7 @@ function f0012(int)//CARGAR HTML desde 0 de capa ruta//vars IN: g00VARS[27][2] ,
 									break;
 									case 3://Imagen estática
 										f0123(mIr008B[v4][2][mIr008B[v4][3]]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1x0"></div>';
+										v02 += '<div class="c1x1 cZIn"><img src="'+kTapa0[bus][2]+'" class="c1xO"></div>';
 									break;
 									case 4://Video estático
 										v02 += '<div class="c1x1 cZIn"></div>';
@@ -1783,7 +1783,7 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 						g00VARS[65][2] = window.outerHeight;//.innerHeight;//ventana actual con navegador , outerHeight;navegador completo
 						
 						if(g00VARS[65][2] < 1500)//Si alto menor de 2000px (pantalla pequeña o normal) OCULTAR la fila de botones inferior (Filbo)
-						{ 	iNt.style.height = 'calc(35% - 5vh)';//
+						{ 	iNt.style.height = '32vh!important';//calc(35% - 5vh)
 							iFilbo.classList.add('cX');
 							iCelu.classList.remove('cCel1');
 							iCelu.classList.add('cCel0');
@@ -1795,7 +1795,7 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 							//iTio.classList.add('cTi0');
 						}
 						else//Si es igual o mayor de 2000px (pantalla muy alta) MOSTRAR la fila de botones inferior (Filbo)
-						{	iNt.style.height = 'calc(35% - 5vh - 5vh)';//calc(35% - max(var(--z),5vh))';//calc(35vh - max(var(--z),5vh))
+						{	iNt.style.height = '27vh!important';//calc(35% - 5vh - 5vh)
 							iFilbo.classList.remove('cX');
 							iCelu.classList.remove('cCel0');
 							iCelu.classList.add('cCel1');
@@ -11121,7 +11121,7 @@ function hh62(anun)//CARGAR los guiones de la presentación AV Audio Visual es s
 				switch(mIr003B[v10][1][0])//El [0] indica que es el titular de ese anuncio, Tipo de ilet v10 = icono/imagen.. 0-3 TOMADO DE function f0012()
 				{	case 0://Imagen dinámicalet v10 = 
 						f0123(mIr003B[v10][2][0]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-						v9 = '<img src="'+kTapa0[bus][2]+'" class="c1x0">';
+						v9 = '<img src="'+kTapa0[bus][2]+'" class="c1xO">';
 					break;
 					case 1://Icono dinámico
 						v9 = '<i class="'+kTapa1[mIr003B[v10][2][0]][2]+' cAjust8"></i>';
@@ -11131,7 +11131,7 @@ function hh62(anun)//CARGAR los guiones de la presentación AV Audio Visual es s
 					break;
 					case 3://Imagen estática
 						f0123(mIr003B[v10][2][0]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-						v9 = '<img src="'+kTapa0[bus][2]+'" class="c1x0">';
+						v9 = '<img src="'+kTapa0[bus][2]+'" class="c1xO">';
 					break;
 					case 4://Video estático
 						v9 = '<div class=" "></div>';
@@ -11143,7 +11143,7 @@ function hh62(anun)//CARGAR los guiones de la presentación AV Audio Visual es s
 			else//Se trata de la portada "bienvenido a NOMBRE DE LA COMUNIDAD"
 			{	f0001();//CONSEGUIR la hora local actual
 				f0123(dExt[3]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-				v9 = '<i class="'+kTapa1[83][2]+' cAjust8"></i>';//kTapa1[51][2] '<img src="'+''+'" class="c1x0">';
+				v9 = '<i class="'+kTapa1[83][2]+' cAjust8"></i>';//kTapa1[51][2] '<img src="'+''+'" class="c1xO">';
 				if(mIkControl[1][1])//Control formato hora nacional:   hora 00:00  /  00:00 hora
 				{	v0 += mIkTapaI[1][id].charAt(0).toUpperCase() + mIkTapaI[1][id].slice(1) +'<!--span class="cLTR"-->'+ miHora +'<!--/span-->';
 					v1 += mIkTapaI[1][id] + miHora;
@@ -11383,8 +11383,8 @@ function hh72()//COLOREAR borde de la presentación AV, cargar el codigo QR, el 
 
 
 			f0123(dExt[3]);//BUSCAR id/Fila que corresponde a cierto id Buscado en kTapa0
-			iPreAV.innerHTML = '<i class="'+kTapa1[83][2]+' cAjust8"></i>';//'';//<img src="'+kTapa0[bus][2]+'" class="c1x0">'||'<i class="'+kTapa1[51][2]+' cAjust8"></i>';
-			//iPreAV.innerHTML = '<img src="'+(kTapa0[dExt[3]][2]||'files/chapinero.jpg')+'" class="c1x0">';
+			iPreAV.innerHTML = '<i class="'+kTapa1[83][2]+' cAjust8"></i>';//'';//<img src="'+kTapa0[bus][2]+'" class="c1xO">'||'<i class="'+kTapa1[51][2]+' cAjust8"></i>';
+			//iPreAV.innerHTML = '<img src="'+(kTapa0[dExt[3]][2]||'files/chapinero.jpg')+'" class="c1xO">';
 			
 
 
