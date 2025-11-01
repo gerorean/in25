@@ -5,7 +5,8 @@
 
  .cR{			background:red!important}
 
- .cT{			color:transparent!important}
+ .cFran
+,.cT{			color:transparent!important}
 
 /*.cT{			background:rgba(255,100,255,0.4)!important}/**/
 
@@ -102,6 +103,7 @@
 				--cWH:1;/*RELACION ANCHO/ALTO DE LA PANTALLA*/
 				--cYel:transparent;/*COLOR DE LA LUZ -rgba(255,255,0,0.1);*/
 				--e:0.3px;/*espacio entre letras del texto*/
+				--fo:15px;/*borde tipo paddin para el boton donde se colorea el cursor de color por el foco, NOTA: falta programarlo ver --palo*/
 				--h:29px;/*altura de la línea de texto*/
 				--marH:0.5%;/*vh;/*0.5vh;/*margen superior e inferior de la presentación AV*/
 					/*	--mJPG:calc(var(--cJPG)*1.2);/*MARGEN PARA LAS IMAGENES Y O ICONOS CENTRALES*/
@@ -156,7 +158,7 @@
 
  .c--Grey{		background:rgba(0,0,0,0.1)}
 
- .cSom
+ .c--Som
 ,.c--TexU{		background:rgba(0,0,0,0.2)}
 
  .cIwhi
@@ -211,7 +213,8 @@
 ,.cVert
 ,#iYell{		background:var(--cYel)}/*cGreyT)}*/
 
- .cA--me{		background:white}
+ .cA--me
+,.cSom{		    background:white}
 
  .cAma{			background:yellow}
 
@@ -269,12 +272,15 @@
 ,.cButton
 ,.cTitul{		border-radius:calc(var(--palo)*2)}/*var(--rmin)*/
 
+ .cEsqi{		border-radius:calc(var(--palo)*3)}/*var(--rmin)*/
+
  .z70{			border-radius:var(--rmin) var(--rmin) 0 0}/*var(--rmin) var(--rmin) 0 0} calc(var(--cHGlo)*1px) calc(var(--cHGlo)*1px) 0 0}*/
 
  .cLUp{			border-radius:calc((var(--chico)*0.5)) calc((var(--chico)*0.5)) calc(var(--palo)*2) calc(var(--palo)*2) !important}/*calc((var(--chico)*0.5)) calc((var(--chico)*0.5)) var(--rmin) var(--rmin)!important*/
 
  .cBott
 ,.c--Chico
+,.cLen
 ,.cPic2
 ,.cPunto
 ,.c--Reloj
@@ -298,7 +304,7 @@
 
  .rEsqi{		box-shadow:0 0 0 calc(var(--palo)*0.6) red, inset 0 0 0 calc(var(--palo)*0.25) var(--cblwh2), inset 0 0 0 calc(var(--palo)*2.5) red}
 
- .cSom{			box-shadow:0 0 5px 5px rgba(0,0,0,0.1)}
+ .cSom{			box-shadow:0 0 calc(max(3px,1vh)) calc(max(3px,1vh)) rgba(0,0,0,0.3)}
 
  .z70{			box-shadow:0 max(3px,0.7vh) var(--cblwh1)}
 
@@ -307,15 +313,17 @@
 
  .cEsqi{		box-shadow:inset 0 0 0 calc(var(--palo)*0.25) var(--cblwh2), inset 0 0 0 calc(var(--palo)*2) var(--cBeige)}
 
+
  .cBu--tton:focus
-,.cBoRd{		box-shadow:inset 0 0 0 var(--palo) var(--cBeige)}/*var(--cBeige)}/*var(--cBeige)}/*cBorde)}/*var(--sky)}*/
+,.cBoRd{		box-shadow:inset 0 0 0 var(--fo) var(--cBeige)}/*nota los botones deberían tener un padding transparente y con el foco los botones deberían colorear ese padding de color*/
+
 
  .cAjust9
 ,.cAma
 ,.cLuz
 ,.cTitul{		box-shadow:inset 0 0 0 var(--pelo) var(--cblwh1)}
 
- .c--Len{			box-shadow:inset 0 0.5vh 0.5vh var(--cBeige)}
+ .c--Len{		box-shadow:inset 0 0.5vh 0.5vh var(--cBeige)}
 
  /*
  #--iCAPA{		box-shadow:inset 0 0 min(35vh,35vw) min(7vh,7vw) black}
@@ -325,12 +333,17 @@
  .cFon{			box-shadow:inset 0 max(-1px,-0.7vh) var(--cBeige)}
 */
 
+
+
+/*
  .cButton:focus
  .cAjust9
 ,.cButton:focus
  .cAma
 ,.cButton:focus
- .cLuz{			box-shadow:inset 0 max(-1px,-0.7vh) var(--cBeige), inset calc(var(--palo)*1) 0 0 var(--cBeige), inset 0 calc(var(--palo)*1) 0 var(--cBeige), inset calc(var(--palo)*-1) 0 0 var(--cBeige)}/*var(--cBeige)}/*var(--cBeige)}/*cBorde)}/*var(--sky)}*/
+ .cLuz{			box-shadow:inset 0 max(-1px,-0.7vh) var(--cBeige), inset calc(var(--palo)*1) 0 0 var(--cBeige), inset 0 calc(var(--palo)*1) 0 var(--cBeige), inset calc(var(--palo)*-1) 0 0 var(--cBeige)}
+*/
+
 
 /*
  .cFon{			box-shadow:inset 0 max(-1px,-0.7vh) var(--cbw1)}
@@ -467,7 +480,7 @@
 
  .c--Marqu{		font-size:32px}/*32px es tomado de f0028, switch aux case 4 = 32px tamaño mediano  13vh}/*13vh 9vh  42px}/*8vh}*/
 
- .big{			font-size:135%}
+ .big{			font-size:115%}/*font-size:135%}*/
 
  .yProsaL
 ,.zProsa{		font-size:calc(1px * var(--cHTex))}/*70%}/**/
@@ -516,7 +529,7 @@
  #i--Menu
 ,#i--Soni{		font-size:min(var(--bh),4vw)}/*calc(var(--cAlt) * 0.5),6vw)}/*min(calc(var(--bh)*0.7),6vw)}/*calc(var(--cAlt) * 0.5)}*/
 
- .cFran{		font-size:min(var(--bh),6vw)}
+ .cFran{		font-size:min(var(--bh),4vw)}
 
  #iInfo{		font-size:min(var(--cAlt),11vw)}/*var(--b))}*/
 
@@ -565,7 +578,7 @@
 
  .cGlosD{		height:5%}/*calc(1px * var(--cHGlo))}*/
 
- .cSom{			height:5px}
+ .cSom{			height:calc(max(2px,0.3vh))}
 
  .cBota
 ,.cBote
@@ -585,8 +598,7 @@
 
  /*terminar de ajustar iApp*******/
  #iApp
-,#iInCom{		height:calc(100% - (max(var(--z),5vh)))}
-
+,#iInCom{		height:calc(100% - (max(var(--z),4vh)))}/*height:calc(100% - (max(var(--z),5vh)))}*/
 
  .cTexU{		height:30%}/*45%}/*45vh}*/
 
@@ -648,7 +660,7 @@
 
  .cCua{			height:min(13vh,13vw)}
 
- .cChico{		height:calc(max(var(--z),5vh))}
+ .cChico{		height:calc(max(var(--z),4vh))}
 
  .cHori
 ,.c--Menu
@@ -662,7 +674,7 @@
 
  .cGrey
 ,.cLen
-,.cNeg{			height:max(var(--z),5vh)}
+,.cNeg{			height:max(var(--z),4vh)}/*max(var(--z),5vh)}*/
 
  .cBOT
 ,.cChico
@@ -1040,7 +1052,6 @@
 
  .c--Grey
 ,.cHue
-,.cLen
 ,.cLR
 ,.cNeg
 ,.cVert
@@ -1061,7 +1072,7 @@
 
  .cH0{			top:50%}/*50%*/
 
- #iNt{			top:68vh}/*65vh}*/
+ #iNt{			top:64vh}/*65vh}*/
 
 /*
  .c46999{			top:calc(((62.5% - (1.25*(var(--b))))*(1/3)) + var(--b))}
@@ -1069,15 +1080,17 @@
  .c31999{			top:calc(((62.5% - (1.25*(var(--b))))*(2/3)) + var(--b))}
 */
 
- .cTones{		top:4vh}/*var(--bh)*/
+/*
+ .cTones{		top:4vh}
+*/
 
  .cTitul{		top:var(--marH)}
 
  #iNoti{		top:var(--pelo)}/*top:var(--pelo)    calc(19.5vh - var(--pelo))}/*19.5vh - 9.75vh  16vh  8vh   se toma 10vh menos .25vh(x2) del borde inferior*/
-
+/*
  #iApp
-,#iInCom{		 top:max(var(--z),5vh)}/*max(var(--z),5vh)}*/
-
+,#iInCom{		 top:max(var(--z),5vh)}
+*/
  .cGlosD
 ,.c--Infi
 ,.cInfo
@@ -1271,7 +1284,7 @@
  .cFanta{		-webkit-text-fill-color:var(--cBw1)}
 
 
- .cFran{		-webkit-text-fill-color:var(--cBeige)}
+ .c--Fran{		-webkit-text-fill-color:var(--cBeige)}
 
 
  .cGran

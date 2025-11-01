@@ -1783,24 +1783,24 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 						g00VARS[65][2] = window.outerHeight;//.innerHeight;//ventana actual con navegador , outerHeight;navegador completo
 						
 						if(g00VARS[65][2] < 1500)//Si alto menor de 2000px (pantalla pequeña o normal) OCULTAR la fila de botones inferior (Filbo)
-						{ 	iNt.style.height = '32vh!important';//calc(35% - 5vh)
+						{ 	//iNt.style.height = '32vh!important';//calc(35% - 5vh)
 							iFilbo.classList.add('cX');
-							iCelu.classList.remove('cCel1');
-							iCelu.classList.add('cCel0');
-							iCeLu.classList.remove('cCel1');
-							iCeLu.classList.add('cCel0');
+							//iCelu.classList.remove('cCel1');
+							//iCelu.classList.add('cCel0');
+							//iCeLu.classList.remove('cCel1');
+							//iCeLu.classList.add('cCel0');
 							//iTia.classList.remove('cTi1');
 							//iTia.classList.add('cTi0');
 							//iTio.classList.remove('cTi1');
 							//iTio.classList.add('cTi0');
 						}
 						else//Si es igual o mayor de 2000px (pantalla muy alta) MOSTRAR la fila de botones inferior (Filbo)
-						{	iNt.style.height = '27vh!important';//calc(35% - 5vh - 5vh)
+						{	//iNt.style.height = '27vh!important';//calc(35% - 5vh - 5vh)
 							iFilbo.classList.remove('cX');
-							iCelu.classList.remove('cCel0');
-							iCelu.classList.add('cCel1');
-							iCeLu.classList.remove('cCel0');
-							iCeLu.classList.add('cCel1');
+							//iCelu.classList.remove('cCel0');
+							//iCelu.classList.add('cCel1');
+							//iCeLu.classList.remove('cCel0');
+							//iCeLu.classList.add('cCel1');
 							//iTia.classList.remove('cTi0');
 							//iTia.classList.add('cTi1');
 							//iTio.classList.remove('cTi0');
@@ -10803,7 +10803,7 @@ function hh51()//AJUSTAR estilo vibración
 			hh19();//HABILITAR tamaño 2
 			//hh20();//texto pequeño
 			//f0092();//HABILITAR bordes superior e inferior
-			hh21(11);//APLICAR color gris
+			hh21(2);//APLICAR color naranja hh21(3);//APLICAR color amarillo
 			f0118();//HABILITAR la luz
 		}
 
@@ -10838,7 +10838,7 @@ function hh53()//AJUSTAR estilo texto
 
 
 			hh30();//HABILITAR tamaño 4 mediano
-			hh21(3);//APLICAR color amarillo
+			hh21(2);//APLICAR color naranja  hh21(3);//APLICAR color amarillo
 			//__
 			//f0092();//HABILITAR bordes superior e inferior
 			f0118();//HABILITAR la luz	
@@ -10911,7 +10911,7 @@ function hh56()//AJUSTAR estilo texto máximo
 
 
 		 	hh33();//HABILITAR tamaño 7
-			hh21(13);//APLICAR color violeta
+			hh21(2);//APLICAR color naranja hh21(13);//APLICAR color violeta
 			//f0092();//HABILITAR bordes superior e inferior
 			f0118();//HABILITAR la luz
 		}

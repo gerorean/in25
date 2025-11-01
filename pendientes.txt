@@ -1,5 +1,8 @@
 Pendientes:
 
+Engrosar el borde del cursor proporcional al grosor de la letras, cuadrar la fuentes del intercomunicador
+revisar la vibraciones
+
 mCon no debería activar el conteo si está en modo informador, esta reduciendo el tamaño de la
 letra en la portada luego de 1 minuto OJO!!!
 
