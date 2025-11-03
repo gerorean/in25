@@ -37,7 +37,7 @@
   background-image: url('files/chatico.png');
   background-size: cover;
   background-position: center;
-  background-color: var(--cbw2);
+  background-color: var(--cbw22);/*var(--cbw2);*/
 
   /* Forma circular */
   border-radius: var(--palo);
@@ -327,7 +327,9 @@
  .z70{			box-shadow:0 max(3px,0.7vh) var(--cblwh1)}
 
  .cBOT
-,.cTexM{		box-shadow:inset 0 0 0 0.5px var(--cbw1), 0 0 0 0.3px var(--cbw2), inset 0 0 0 calc(var(--palo)/2) var(--cYel),inset 1px 1px 1px calc(var(--palo)/2) var(--cYel)}/*var(--cYel) var(--cGreyT)*/
+,.cTexM
+,#iUn1
+,#iUn2{			box-shadow:inset 0 0 0 0.5px var(--cbw1), 0 0 0 0.3px var(--cbw2), inset 0 0 0 calc(var(--palo)/2) var(--cYel),inset 1px 1px 1px calc(var(--palo)/2) var(--cYel)}/*var(--cYel) var(--cGreyT)*/
 
  .cEsqi{		box-shadow:inset 0 0 0 calc(var(--palo)*0.25) var(--cblwh2), inset 0 0 0 calc(var(--palo)*2) var(--cBeige)}
 
@@ -392,14 +394,13 @@
 ,.cTapa
 ,.cTexM
 ,#iKeyB
-,#iEnt
-,#iTaco{		color:var(--cblwh1)}
+,#iTaco
+,.keR{		color:var(--cblwh1)}
 
  .cAsk
 ,.c--Infi
 ,.cIng
 ,.c--Reloj
-,#iEnt
 ,#iInfo
 ,#i--Hora
 ,.yProsaL
@@ -416,6 +417,7 @@
 ,.cInfo
 ,.cSiV
 ,.cTexU
+,#iEnt
 ,#i--Noti
 ,#iTTP{			color:white}
 
@@ -490,6 +492,7 @@
 ,.cIyel
 ,.cTexM
 ,.keY
+,#iEnt
 ,#iHora
 ,#iTaco{		font-family:Inter,Roboto,'IBM Plex Sans', 'Noto Sans', 'Source Sans 3',Arial,Verdana,Tahoma,sans-serif !important}
 

@@ -6664,6 +6664,14 @@ function f0109()//hh89 QUITAR la presentación
 			////////}
 			ini1 = false;//Desactiva la marquesina local
 			ini2 = false;//Desactiva la marquesina en ingles
+
+
+
+			//mostrar a chatico..
+			yBBo.style.backgroundImage = "url('files/chatico.png')";
+			yBBo.style.border = "2px solid var(--cblwh1)";
+
+
 			iPreAV.innerHTML = '';
 			if(g00VARS[5][2])//Si esta i1..
 			{	inteL.innerHTML = '';
@@ -6711,6 +6719,14 @@ function f0111(can)//hh91 CANCELAR salida de audio y vibraciones
 
 function f0112()//hh92 ACTIVAR el manejador de marquesinas handleMarquee() - tomado de https://www.w3docs.com/tools/code-editor/2123#google_vignette
         {	lOG(112);
+
+
+			//ocultar a chatico..
+			yBBo.style.backgroundImage = "none";
+			yBBo.style.border = "none";
+
+
+
 			f0113();//ENCONTRAR todos los elementos de marquesina
 
         	/*const marquee = document.querySelectorAll('.marquee');//https://www.w3schools.com/JSREF/met_document_queryselectorall.asp
@@ -10086,17 +10102,17 @@ function hh5(get,rev)//CAMBIAR o TRAER el modo actual
 			if(get == undefined||get == 0)//Si no hay que traer es porque va a cambiar de modo
 			{	if(rev)
 				{	if(i > 1)//Si no es la PRIMER posicion..
-					{	g00VARS[45][2] = i-1;//tome el id de la siguiente fila
+					{	g00VARS[45][2] = i-1;//tome el id de la fila anterior
 					}
 					else//i = 1
-					{	g00VARS[45][2] = 5;//tome el id de la primer fila
+					{	g00VARS[45][2] = 5;//tome el id de la ultima fila
 					}
 				}
 				else
 				{	if(i < 5)//Si no es la ultima posicion..
 					{	g00VARS[45][2] = i+1;//tome el id de la siguiente fila
 					}
-					else//i = 9
+					else//i = 6
 					{	g00VARS[45][2] = 1;//tome el id de la primer fila
 					}
 				}
@@ -10111,7 +10127,8 @@ function hh5(get,rev)//CAMBIAR o TRAER el modo actual
 				case 2:hh51();break;
 				case 3:hh53();break;
 				case 4:hh56();break;
-				case 5:hh58();break;//hh57();break;
+				case 5:hh58();break;
+				//case 6:hh57();break;
 				//case 6:hh58();break;
 				//case 7:hh59();break;
 			}
@@ -10890,7 +10907,7 @@ function hh56()//AJUSTAR estilo texto máximo
 			f0119();//CONMUTAR el botón seña(1) o idioma visible()
 			f0093();//REGISTRAR primer clic maximizando
 			hh49();//REGISTRAR la primer selección de ACCESO
-			hh64(3);//HABILITAR visor tamaño 3
+			hh64(4);//HABILITAR visor tamaño 4
 			//hh66();//HABILITAR visor tamaño 3
 			//hh65();//Señas pequeñas?g00VARS[64][2] = 4;//icono grande
 			f0067();//Ajusta el visor
@@ -10901,18 +10918,42 @@ function hh56()//AJUSTAR estilo texto máximo
 		 	hh24();//HABILITAR lector de pantalla (sonido)
 
 
-
-
 		 	//hh28();//HABILITAR texto negro, botón amarillo
 			//hh84();//HABILITAR texto negro / blanco
 			hh27();//HABILITAR texto blanco sobre boton negro
 
 
-
-
 		 	hh33();//HABILITAR tamaño 7
 			hh21(2);//APLICAR color naranja hh21(13);//APLICAR color violeta
 			//f0092();//HABILITAR bordes superior e inferior
+			f0118();//HABILITAR la luz
+		}
+
+
+function hh57()//AJUSTAR estilo tarjetas
+		{	hOU(57);
+			//g00VARS[45][2] = 8;
+			//f0126();//ACTUALIZAR la ruta
+			f0119();//CONMUTAR el botón seña(1) o idioma visible()
+			f0093();//REGISTRAR primer clic maximizando
+			hh49();//REGISTRAR la primer selección de ACCESO
+			//hh64();//Señas minimas?//g00VARS[64][2] = 0;//visor pequeño
+			hh64(5);//HABILITAR visor tamaño 5
+			//hh65();//HABILITAR visor tamaño 2
+			f0067();//Ajusta el visor
+			hh3();//CAMBIAR a líneas Braille
+			hh25();//DESHABILITAR i1 (sin Ingles de apoyo)
+			f0105();//RESET de velocidad -> 1.0
+			hh24();//HABILITAR lector de pantalla (sonido)
+		 	hh84();//HABILITAR texto negro / blanco
+
+			hh30();//HABILITAR tamaño 4 mediano
+			//hh19();//HABILITAR tamaño 2
+			//hh20();//texto pequeño
+			//___
+			//f0092();//HABILITAR bordes superior e inferior
+			hh21(6);//APLICAR color azul
+			//hh21(9);//APLICAR color rojo
 			f0118();//HABILITAR la luz
 		}
 
@@ -11596,6 +11637,7 @@ function hh87()//RESET de ACCESO
 				case 3: hh53();break;
 				case 4: hh56();break;
 				case 5: hh58();break;
+				//case 6: hh57();break;
 			}
 			gRuta = 1;
 			gFoco = 8;
