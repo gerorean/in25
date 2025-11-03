@@ -28,6 +28,24 @@
   .cUp{			z-index:0}
 
 
+.circulo {
+  aspect-ratio: 1 / 1.5; /* mantiene el círculo */
+  height:12vh;/* min(10vh,10vw) 10vh;*/
+  /*height: 80px;*/
+
+  /* Imagen dentro del círculo */
+  background-image: url('files/chatico.png');
+  background-size: cover;
+  background-position: center;
+  background-color: var(--cbw2);
+
+  /* Forma circular */
+  border-radius: var(--palo);
+
+  /* Borde negro */
+  border: 2px solid var(--cblwh1);
+}
+
 
 
 /* Animación CSS para iOS a* /
@@ -470,8 +488,10 @@
 */
  .cIwhi
 ,.cIyel
+,.cTexM
 ,.keY
-,#iHora{			font-family:Inter,Roboto,'IBM Plex Sans', 'Noto Sans', 'Source Sans 3',Arial,Verdana,Tahoma,sans-serif !important}
+,#iHora
+,#iTaco{		font-family:Inter,Roboto,'IBM Plex Sans', 'Noto Sans', 'Source Sans 3',Arial,Verdana,Tahoma,sans-serif !important}
 
  .cCero
 ,.cFs0{			font-size:0}
