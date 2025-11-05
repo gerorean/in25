@@ -34,7 +34,7 @@
   /*height: 80px;*/
 
   /* Imagen dentro del círculo */
-  background-image: url('files/chatico.png');
+  background-image: url('files/pcuid.png');/*'files/chatico.png');*/
   background-size: cover;
   background-position: center;
   background-color: var(--cbw22);/*var(--cbw2);*/
@@ -44,6 +44,14 @@
 
   /* Borde negro */
   border: 2px solid var(--cblwh1);
+}
+
+.imagen-cuadrada {
+  display: block;          /* Necesario para centrar con margin */
+  height: 32vh;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  margin: 0 auto;          /* Centra horizontalmente */
 }
 
 
