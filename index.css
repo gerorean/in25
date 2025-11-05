@@ -270,7 +270,7 @@
  ,#yBot7
  ,#y--Bot5{		border-radius:calc(var(--rmin)*2) 0 0 calc(var(--rmin)*2)}/*{		border-radius:7.5vh 0 0 7.5vh}11.25vh 0 0 11.25vh}*/
 
- #iIntM0{		border-radius:calc(var(--rmin)*2)}/*{		border-radius:7.5vh}*/
+ .cTexM{		border-radius:calc(var(--rmin)*2)}/*{		border-radius:7.5vh}*/
 
  .c--Ame
 ,.c--Ask
@@ -609,7 +609,7 @@
 
  .cImKe{		height:13%}/*13vh}*/
 
- .cTexM{		height:45%}/*15%}/*13vh}*/
+ .cTexM{		height:32%}/*45%}/*13vh}*/
 
  .cBOT
 ,.c--Ent
@@ -732,7 +732,7 @@
 
  .cHori{		left:33.3333333%}
 
- #iIntM0{		right:5vw}
+ #iIntM0{		right:0}/*5vw}*/
 
  /*.c--Band{		left:min(17vh,17vw)}/*calc(min(8.5vh,8.5vw) - 0.5vw)}*/
 
@@ -886,10 +886,11 @@
 ,.zProsa{		padding:0 1vw}
 
  .cPadd4A
-,.c--TexM
-,#iIntMo{		padding:0 15%}
+,.c--TexM{		padding:0 15%}
 
- #iIntM0{		padding:0 10%}
+ #iIntM0{		padding:0 min(13vh,13vw) 16vh 1vw}
+
+ #iIntMo{		padding:0 1vw 16vh min(13vh,13vw)}
 
  .i--nner>*{	padding:0 var(--cDelta)}/*604/2 la otra mitad del ancho!!*/
 
@@ -1085,13 +1086,13 @@
 ,#iRUTA
 ,#iTAPA{		top:0}
 
- #iIntMo{		top:5vh}
+ #iIntMo{		top:0}
 
  .c46{			top:16.66666666666%}/*16.666666666%*/
 
  .c13{			top:33.33333333333%}/*33.33333333%}*/
 
-  #iIntM0{		top:20vh}
+  #iIntM0{		top:32vh}
 
  .cH0{			top:50%}/*50%*/
 
@@ -1149,7 +1150,7 @@
 
  .cChico{		width:80vw}/*calc(100% - 3.4*(var(--cAlt)))}/*min(17vh,17vw)))}*/
 
- #iIntM0{		width:90%}
+ .cTexM{		width:75%}/*90%}*/
 
  .c1x1
 ,.c--Band
@@ -1173,7 +1174,6 @@
 ,#iCelu
 ,#iCeLu
 ,#iInCom
-,#iIntMo
 ,#i--KeyB
 ,#i--KeyS
 ,#i--NEG
