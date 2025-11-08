@@ -1785,9 +1785,7 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 						if(g00VARS[65][2] < 1500)//Si alto menor de 2000px (pantalla pequeña o normal) OCULTAR la fila de botones inferior (Filbo)
 						{ 	//iNt.style.height = '32vh!important';//calc(35% - 5vh)
 							iFilbo.classList.add('cX');
-							//iCelu.classList.remove('cCel1');
 							//iCelu.classList.add('cCel0');
-							//iCeLu.classList.remove('cCel1');
 							//iCeLu.classList.add('cCel0');
 							//iTia.classList.remove('cTi1');
 							//iTia.classList.add('cTi0');
@@ -1798,9 +1796,7 @@ function f0018()//ESPERAR un segundo, el tamaño de la pantalla cambio, si no ha
 						{	//iNt.style.height = '27vh!important';//calc(35% - 5vh - 5vh)
 							iFilbo.classList.remove('cX');
 							//iCelu.classList.remove('cCel0');
-							//iCelu.classList.add('cCel1');
 							//iCeLu.classList.remove('cCel0');
-							//iCeLu.classList.add('cCel1');
 							//iTia.classList.remove('cTi0');
 							//iTia.classList.add('cTi1');
 							//iTio.classList.remove('cTi0');

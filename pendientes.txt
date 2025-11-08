@@ -1,4 +1,4 @@
-Pendientes:
+Pendientes:   0 13 26 39 52 65 + 32 + 4?   31
 
 Engrosar el borde del cursor proporcional al grosor de la letras, cuadrar la fuentes del intercomunicador
 revisar la vibraciones
@@ -38,7 +38,7 @@ utilizar la  f0028(def) para ajustar automaticamente el tamaño de la interfaz u
 si va a ser 100%-200% o 300% jugando con style.setProperty('--a') y f0028(1);//ACTUALIZAR el tamaño del texto por defecto(1)
 
 
-ojo con cCel0, cCel1, cTi0, cTi1 en f0018()   revisar porque cuadra con .c--Ti1{		height:calc(100% - (var(--marH) * 2))}
+ojo con cCel0, cTi0, cTi1 en f0018()   revisar porque cuadra con .c--Ti1{		height:calc(100% - (var(--marH) * 2))}
 
 0. ver si quitar las funciones f0092() y f0108() y el div iStop junto con sus estilos ya que por el nuevo 
 borde inferior y que el borde superior queda oculto por el cabezote dichos elementos ya no hacen nada?

@@ -883,10 +883,6 @@
 				<div id='iPos2' class='cVert' onclick='f0074()'><!--bloqueo vertical derecho-->
 				</div>
 				<!--div id='iStop'><!--bloqueos horizontales-- >
-					<div class='cHori cBott cR' onclick='f0074()'>
-					</div>
-					<div class='cHori cR' onclick='f0074()'>
-					</div>
 				</div-->
 			</div>
 			<!--div class='cMenu cTop'>
@@ -905,7 +901,7 @@
 				<div id='mBotS' class='fas fa-square cTran c45Rot'></div>
 			</div-->
 			<!--div id='mBoTR' class='cBotRED'>
-				<div id='mBotR' class='fa fa-minus cGran'></div>
+				<div id='mBotR' class='fa fa-minus cMed'></div>
 			</div-->
 			<div class='cTones'><!--para ajustar el espacio de los 8 botones grandes-->		
 				<div id='numbers' class='cX'><!--NUMBERS para mostrar los números de las teclas físicas-->
@@ -917,6 +913,12 @@
 					</div>
 					<div class='c46 cMark cTec cFleB'>4
 					</div>
+
+					<div class='c28 cMark cTec cDer cFleB'>8
+					</div>
+					<div class='c28 cMark cTec cFleB'>2
+					</div>
+					
 					<div class='c13 cMark cTec cDer cFleB'>3
 					</div>
 					<div class='c13 cMark cTec cFleB'>1
@@ -929,7 +931,7 @@
 				<!--boton | [9] ayuda-->
 				<div id='yBot9' class='cTop cBOT' onclick='f0024(1)'>
 					<div class='cBote cFlex c X'>
-						<i id='yBB9' class='fa fa-minus cGran c90Rot'></i>
+						<i id='yBB9' class='fa fa-minus cMed c90Rot'></i>
 					</div>
 					<!--div class='cBote cFlex cX'>
 						<i class='fas fa-info c25Rot cTran'></i>
@@ -947,7 +949,7 @@
 				<!--boton - [5] entrada morse onclick='f0145()'-->
 				<div id='boT0' class='cH0 cBOT cX9'>
 					<div class='cBota cFlex'>
-						<i id='yBB5' class='fa fa-minus cGran'></i>
+						<i id='yBB5' class='fa fa-minus cMed'></i>
 					</div>
 				</div>
 				<!--boton / [0] cambio de entrada -> /morse/teclado normal/teclado gigante/señas/off/ onclick='f0148()'-->
@@ -959,7 +961,7 @@
 						<!--div class='rombo-img c-R'>
 							<i id='yBBo' class='f--as fa---square c--45RoT c--Tran c45TT'></i><!--fa fa-minus    fas fa-egg cGran c45RoT'></i-- >
 						</div-->
-							<!--i id='yBBo' class='fas fa-splotch c--Tran estrella'></i><!--fa fa-minus   cGran c45RoT'></i-->
+							<!--i id='yBBo' class='fas fa-splotch c--Tran estrella'></i><!--fa fa-minus   cMed c45RoT'></i-->
 						<i id='yBBo' class='circulo cTran'></i>
 					</div>
 				</div>
@@ -973,7 +975,7 @@
 					<!--boton X [1] salir o cancelar-->
 					<div id='yBot1' class='c13 cBOT cX9 cStop'>
 						<div class='cBota cFlex'>
-							<i id='yBB1' class='fas fa-times cGran cOff'></i>
+							<i id='yBB1' class='fas fa-times cMed cOff'></i>
 						</div>
 					</div>
 					<!--boton V [6] avanzar adelante un item (+1)-->
@@ -989,6 +991,22 @@
 						<div class='cBota cFlex'>
 							<i class='fas fa-backspace cX'></i>
 							<i id='yBB4' class='fas fa-caret-up cGran c X'></i>
+						</div>
+					</div>
+
+
+					<div id='yBot2' class='c28 cBOT cX9' onclick='f0095(1)'>
+					<!--div id='yBot6' class='c46 cBOT cX9' onclick='f0095(1)'-->		
+						<div class='cBota cFlex'>
+							<i class='fas fa-eraser cX'></i>
+							<i id='yBB2' class='fas fa-square c45RoT cTran cOff'></i>
+						</div>
+					</div>
+					<!--boton ^ [4] retroceder atrás un item (-1)-->
+					<div id='yBot8' class='c28 cBOT cX9' onclick='f0094(1)'>
+						<div class='cBote cFlex'>
+							<i class='fas fa-backspace cX'></i>
+							<i id='yBB8' class='fa fa-minus c45RoT cMed c X cOff'></i>
 						</div>
 					</div>
 				</div>
@@ -1201,8 +1219,8 @@
 				<span id='iSoni' class='cInfo cEnt'><!--icono del audio activado-->
 					<i id='iDice' class='fas fa-comment-dots cNube'></i>
 				</span>
-				<span id='iLeft' class='cInfo cFlex'><!--titulo principal-->
-					<i class='fas fa-info c25Rot big'></i>
+				<span id='iLeft' class='cInfo cEnt'><!--titulo principal-->
+					<i class='fas fa-info c25Rot'></i>
 				</span>
 				<span id='iTiP0' class='cInfo cIcn'><!--icono de tipo-->
 					<i class='fas fa-street-view'></i>
